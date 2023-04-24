@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+<<<<<<< Updated upstream
+    "\\embul_thiyal"
+  ],
+  "SelectedNode": "\\embul_thiyal\\embul_thiyal.sln",
+=======
+    "\\embul_thiyal",
+    "\\embul_thiyal\\embul_thiyal"
+  ],
+  "SelectedNode": "\\embul_thiyal\\embul_thiyal\\Form1.cs",
+>>>>>>> Stashed changes
+  "PreviewInSolutionExplorer": false
+}
