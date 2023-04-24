@@ -13,7 +13,7 @@ namespace embul_thiyal
         const string cs = @"server=localhost;userid=root;password=;database=ebul_thiyal";
 
         public static MySqlConnection con = new MySqlConnection(cs);
-
+        
         public static void open_connection()
         {
             if (con.State == ConnectionState.Closed)
@@ -24,6 +24,7 @@ namespace embul_thiyal
             {
                 return;
             }
+            
         }
         public static void close_connection()
         {
