@@ -53,3 +53,21 @@ C:\Users\ASUS\Documents\GitHub\embul_thiyal_v01\embul_thiyal\embul_thiyal\obj\De
 C:\Users\ASUS\Documents\GitHub\embul_thiyal_v01\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.exe
 C:\Users\ASUS\Documents\GitHub\embul_thiyal_v01\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.pdb
 C:\Users\gihan\OneDrive\Documents\GitHub\embul_thiyal_v01\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.frm_editItem.resources
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\embul_thiyal.exe.config
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\embul_thiyal.exe
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\embul_thiyal.pdb
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\Guna.UI2.dll
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.csproj.AssemblyReference.cache
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.frm_home.resources
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.frm_customer.resources
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.frm_dashboard.resources
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.frm_editItem.resources
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.frm_item.resources
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.frm_login.resources
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.frm_sale.resources
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.Properties.Resources.resources
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.csproj.GenerateResource.cache
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.csproj.CoreCompileInputs.cache
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.csproj.CopyComplete
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.exe
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.pdb
