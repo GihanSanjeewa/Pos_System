@@ -170,5 +170,11 @@
   <ItemGroup>
     <None Include="Resources\logout1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast-food-pattern-illustration-seamless-black-white-165395530.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vertical-fast-food-frame-27178728.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
