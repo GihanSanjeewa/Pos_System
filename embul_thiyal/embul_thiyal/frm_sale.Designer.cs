@@ -35,6 +35,7 @@ namespace embul_thiyal
             this.label5 = new System.Windows.Forms.Label();
             this.btn_add2Bill = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_iName = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_select = new Guna.UI2.WinForms.Guna2Button();
             this.cb_loyaltyPoints = new Guna.UI2.WinForms.Guna2CheckBox();
             this.lbl_phoneNumber = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@ namespace embul_thiyal
             this.txt_itemCode = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgv_item = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txt_iName = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_item)).BeginInit();
@@ -76,7 +76,7 @@ namespace embul_thiyal
             this.btn_add2Bill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_add2Bill.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_add2Bill.ForeColor = System.Drawing.Color.White;
-            this.btn_add2Bill.Location = new System.Drawing.Point(140, 248);
+            this.btn_add2Bill.Location = new System.Drawing.Point(140, 549);
             this.btn_add2Bill.Name = "btn_add2Bill";
             this.btn_add2Bill.Size = new System.Drawing.Size(180, 45);
             this.btn_add2Bill.TabIndex = 8;
@@ -84,6 +84,7 @@ namespace embul_thiyal
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dgv_item);
             this.groupBox1.Controls.Add(this.txt_iName);
             this.groupBox1.Controls.Add(this.btn_select);
             this.groupBox1.Controls.Add(this.cb_loyaltyPoints);
@@ -100,12 +101,32 @@ namespace embul_thiyal
             this.groupBox1.Controls.Add(this.txt_itemCode);
             this.groupBox1.Controls.Add(this.txt_search);
             this.groupBox1.Controls.Add(this.btn_add2Bill);
-            this.groupBox1.Location = new System.Drawing.Point(61, 56);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(634, 557);
+            this.groupBox1.Size = new System.Drawing.Size(635, 824);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Item Details";
+            // 
+            // txt_iName
+            // 
+            this.txt_iName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_iName.DefaultText = "";
+            this.txt_iName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_iName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_iName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_iName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_iName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_iName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_iName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_iName.Location = new System.Drawing.Point(140, 441);
+            this.txt_iName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_iName.Name = "txt_iName";
+            this.txt_iName.PasswordChar = '\0';
+            this.txt_iName.PlaceholderText = "";
+            this.txt_iName.SelectedText = "";
+            this.txt_iName.Size = new System.Drawing.Size(244, 32);
+            this.txt_iName.TabIndex = 14;
             // 
             // btn_select
             // 
@@ -129,9 +150,9 @@ namespace embul_thiyal
             this.cb_loyaltyPoints.CheckedState.BorderRadius = 0;
             this.cb_loyaltyPoints.CheckedState.BorderThickness = 0;
             this.cb_loyaltyPoints.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_loyaltyPoints.Location = new System.Drawing.Point(124, 370);
+            this.cb_loyaltyPoints.Location = new System.Drawing.Point(124, 671);
             this.cb_loyaltyPoints.Name = "cb_loyaltyPoints";
-            this.cb_loyaltyPoints.Size = new System.Drawing.Size(106, 21);
+            this.cb_loyaltyPoints.Size = new System.Drawing.Size(101, 20);
             this.cb_loyaltyPoints.TabIndex = 12;
             this.cb_loyaltyPoints.Text = "Loyal points";
             this.cb_loyaltyPoints.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -144,9 +165,9 @@ namespace embul_thiyal
             // 
             this.lbl_phoneNumber.AutoSize = true;
             this.lbl_phoneNumber.Enabled = false;
-            this.lbl_phoneNumber.Location = new System.Drawing.Point(15, 426);
+            this.lbl_phoneNumber.Location = new System.Drawing.Point(15, 727);
             this.lbl_phoneNumber.Name = "lbl_phoneNumber";
-            this.lbl_phoneNumber.Size = new System.Drawing.Size(101, 17);
+            this.lbl_phoneNumber.Size = new System.Drawing.Size(94, 16);
             this.lbl_phoneNumber.TabIndex = 10;
             this.lbl_phoneNumber.Text = "Phone number";
             // 
@@ -154,27 +175,27 @@ namespace embul_thiyal
             // 
             this.lbl_availblePoints.AutoSize = true;
             this.lbl_availblePoints.Enabled = false;
-            this.lbl_availblePoints.Location = new System.Drawing.Point(404, 428);
+            this.lbl_availblePoints.Location = new System.Drawing.Point(404, 729);
             this.lbl_availblePoints.Name = "lbl_availblePoints";
-            this.lbl_availblePoints.Size = new System.Drawing.Size(107, 17);
+            this.lbl_availblePoints.Size = new System.Drawing.Size(103, 16);
             this.lbl_availblePoints.TabIndex = 10;
             this.lbl_availblePoints.Text = "Available points";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(49, 192);
+            this.label6.Location = new System.Drawing.Point(49, 493);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 17);
+            this.label6.Size = new System.Drawing.Size(58, 16);
             this.label6.TabIndex = 10;
             this.label6.Text = "Quantitiy";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(268, 192);
+            this.label3.Location = new System.Drawing.Point(268, 493);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 17);
+            this.label3.Size = new System.Drawing.Size(64, 16);
             this.label3.TabIndex = 10;
             this.label3.Text = "Unit Price";
             // 
@@ -183,7 +204,7 @@ namespace embul_thiyal
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(45, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 17);
+            this.label2.Size = new System.Drawing.Size(50, 16);
             this.label2.TabIndex = 10;
             this.label2.Text = "Search";
             // 
@@ -192,16 +213,16 @@ namespace embul_thiyal
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(45, 103);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 17);
+            this.label4.Size = new System.Drawing.Size(68, 16);
             this.label4.TabIndex = 10;
             this.label4.Text = "Item Code";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 148);
+            this.label1.Location = new System.Drawing.Point(45, 449);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 17);
+            this.label1.Size = new System.Drawing.Size(69, 16);
             this.label1.TabIndex = 10;
             this.label1.Text = "Item name";
             // 
@@ -217,7 +238,7 @@ namespace embul_thiyal
             this.txt_mobileNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_mobileNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_mobileNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_mobileNumber.Location = new System.Drawing.Point(140, 420);
+            this.txt_mobileNumber.Location = new System.Drawing.Point(140, 721);
             this.txt_mobileNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_mobileNumber.Name = "txt_mobileNumber";
             this.txt_mobileNumber.PasswordChar = '\0';
@@ -237,7 +258,7 @@ namespace embul_thiyal
             this.txt_quantity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_quantity.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_quantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_quantity.Location = new System.Drawing.Point(140, 185);
+            this.txt_quantity.Location = new System.Drawing.Point(140, 486);
             this.txt_quantity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_quantity.Name = "txt_quantity";
             this.txt_quantity.PasswordChar = '\0';
@@ -257,7 +278,7 @@ namespace embul_thiyal
             this.txt_uPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_uPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_uPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_uPrice.Location = new System.Drawing.Point(363, 185);
+            this.txt_uPrice.Location = new System.Drawing.Point(363, 486);
             this.txt_uPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_uPrice.Name = "txt_uPrice";
             this.txt_uPrice.PasswordChar = '\0';
@@ -331,12 +352,12 @@ namespace embul_thiyal
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_item.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_item.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_item.Location = new System.Drawing.Point(750, 68);
+            this.dgv_item.Location = new System.Drawing.Point(18, 158);
             this.dgv_item.Name = "dgv_item";
             this.dgv_item.RowHeadersVisible = false;
             this.dgv_item.RowHeadersWidth = 51;
             this.dgv_item.RowTemplate.Height = 24;
-            this.dgv_item.Size = new System.Drawing.Size(724, 545);
+            this.dgv_item.Size = new System.Drawing.Size(582, 258);
             this.dgv_item.TabIndex = 10;
             this.dgv_item.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_item.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -359,26 +380,6 @@ namespace embul_thiyal
             this.dgv_item.ThemeStyle.RowsStyle.Height = 24;
             this.dgv_item.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_item.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // txt_iName
-            // 
-            this.txt_iName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_iName.DefaultText = "";
-            this.txt_iName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_iName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_iName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_iName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_iName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_iName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_iName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_iName.Location = new System.Drawing.Point(140, 140);
-            this.txt_iName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_iName.Name = "txt_iName";
-            this.txt_iName.PasswordChar = '\0';
-            this.txt_iName.PlaceholderText = "";
-            this.txt_iName.SelectedText = "";
-            this.txt_iName.Size = new System.Drawing.Size(244, 32);
-            this.txt_iName.TabIndex = 14;
             // 
             // guna2Button5
             // 
@@ -406,7 +407,6 @@ namespace embul_thiyal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1800, 897);
-            this.Controls.Add(this.dgv_item);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.guna2Button5);
