@@ -111,14 +111,16 @@ namespace embul_thiyal
 
             if (reader1.Read())
             {
-                while (reader1.Read())
+                
+                
 
                     // txt_itemCode.Text = reader1["item_id"].ToString();
-                    
-                txt_itemName.Text = reader1["item_name"].ToString();
-                txt_unitPrice.Text = reader1["item_price"].ToString();
 
 
+                    txt_uPrice.Text = reader1["item_price"].ToString();
+                    txt_iName.Text = reader1["item_name"].ToString();
+
+                
 
 
 
