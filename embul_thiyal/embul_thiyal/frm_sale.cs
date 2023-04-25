@@ -60,6 +60,11 @@ namespace embul_thiyal
             da.Fill(ds, "item");
             dgv_item.DataSource = ds.Tables["item"].DefaultView;
 
+            dgv_item.Columns[0].Name = "Item ID";
+            dgv_item.Columns[1].Name = "Iem Name";
+            dgv_item.Columns[2].Name = "Item Price";
+            dgv_item.Columns[0].Name = "Item Category";
+
             cls_connection.close_connection();
 
         }

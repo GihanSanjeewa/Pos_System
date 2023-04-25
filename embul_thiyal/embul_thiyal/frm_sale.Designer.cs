@@ -33,7 +33,6 @@ namespace embul_thiyal
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_add2Bill = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_select = new Guna.UI2.WinForms.Guna2Button();
@@ -52,6 +51,7 @@ namespace embul_thiyal
             this.txt_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgv_item = new Guna.UI2.WinForms.Guna2DataGridView();
             this.txt_iName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_item)).BeginInit();
             this.SuspendLayout();
@@ -67,26 +67,6 @@ namespace embul_thiyal
             this.label5.Size = new System.Drawing.Size(60, 24);
             this.label5.TabIndex = 7;
             this.label5.Text = "Home";
-            // 
-            // guna2Button5
-            // 
-            this.guna2Button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Image = global::embul_thiyal.Properties.Resources.house;
-            this.guna2Button5.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2Button5.Location = new System.Drawing.Point(1715, 13);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(72, 73);
-            this.guna2Button5.TabIndex = 6;
-            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click_1);
             // 
             // btn_add2Bill
             // 
@@ -399,6 +379,26 @@ namespace embul_thiyal
             this.txt_iName.SelectedText = "";
             this.txt_iName.Size = new System.Drawing.Size(244, 32);
             this.txt_iName.TabIndex = 14;
+            // 
+            // guna2Button5
+            // 
+            this.guna2Button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button5.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.Image = global::embul_thiyal.Properties.Resources.house;
+            this.guna2Button5.ImageSize = new System.Drawing.Size(50, 50);
+            this.guna2Button5.Location = new System.Drawing.Point(1715, 13);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.Size = new System.Drawing.Size(72, 73);
+            this.guna2Button5.TabIndex = 6;
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click_1);
             // 
             // frm_sale
             // 
