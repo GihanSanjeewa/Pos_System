@@ -114,7 +114,7 @@ namespace embul_thiyal
                 
                 
 
-                    // txt_itemCode.Text = reader1["item_id"].ToString();
+                   
 
 
                     txt_uPrice.Text = reader1["item_price"].ToString();
@@ -133,6 +133,11 @@ namespace embul_thiyal
             
             reader1.Close();
             cls_connection.close_connection();
+        }
+
+        private void dgv_item_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

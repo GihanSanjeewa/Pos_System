@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using System.Xml;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace embul_thiyal
 {
@@ -36,9 +39,27 @@ namespace embul_thiyal
 
         }
 
+   
+
+        public void fndataLoad()
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter("Select * from lcustomer", cls_connection.con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "lcustomer");
+            dgv_customer.DataSource = ds.Tables["lcustomer"].DefaultView;
+
+            cls_connection.close_connection();
+
+        }
+
         private void btn_search_customer_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void txt_mobile_number_TextChanged(object sender, EventArgs e)
+        {
+            fndataLoad();
         }
     }
 }

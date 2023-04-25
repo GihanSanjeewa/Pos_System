@@ -29,13 +29,14 @@ namespace embul_thiyal
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_add2Bill = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_iName = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_select = new Guna.UI2.WinForms.Guna2Button();
             this.cb_loyaltyPoints = new Guna.UI2.WinForms.Guna2CheckBox();
             this.lbl_phoneNumber = new System.Windows.Forms.Label();
@@ -51,9 +52,29 @@ namespace embul_thiyal
             this.txt_itemCode = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgv_item = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txt_iName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_item)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
@@ -96,7 +117,7 @@ namespace embul_thiyal
             this.btn_add2Bill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_add2Bill.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_add2Bill.ForeColor = System.Drawing.Color.White;
-            this.btn_add2Bill.Location = new System.Drawing.Point(140, 248);
+            this.btn_add2Bill.Location = new System.Drawing.Point(140, 568);
             this.btn_add2Bill.Name = "btn_add2Bill";
             this.btn_add2Bill.Size = new System.Drawing.Size(180, 45);
             this.btn_add2Bill.TabIndex = 8;
@@ -105,6 +126,7 @@ namespace embul_thiyal
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txt_iName);
+            this.groupBox1.Controls.Add(this.dgv_item);
             this.groupBox1.Controls.Add(this.btn_select);
             this.groupBox1.Controls.Add(this.cb_loyaltyPoints);
             this.groupBox1.Controls.Add(this.lbl_phoneNumber);
@@ -120,12 +142,32 @@ namespace embul_thiyal
             this.groupBox1.Controls.Add(this.txt_itemCode);
             this.groupBox1.Controls.Add(this.txt_search);
             this.groupBox1.Controls.Add(this.btn_add2Bill);
-            this.groupBox1.Location = new System.Drawing.Point(61, 56);
+            this.groupBox1.Location = new System.Drawing.Point(12, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(634, 557);
+            this.groupBox1.Size = new System.Drawing.Size(634, 816);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Item Details";
+            // 
+            // txt_iName
+            // 
+            this.txt_iName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_iName.DefaultText = "";
+            this.txt_iName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_iName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_iName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_iName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_iName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_iName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_iName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_iName.Location = new System.Drawing.Point(140, 460);
+            this.txt_iName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_iName.Name = "txt_iName";
+            this.txt_iName.PasswordChar = '\0';
+            this.txt_iName.PlaceholderText = "";
+            this.txt_iName.SelectedText = "";
+            this.txt_iName.Size = new System.Drawing.Size(244, 32);
+            this.txt_iName.TabIndex = 14;
             // 
             // btn_select
             // 
@@ -149,9 +191,9 @@ namespace embul_thiyal
             this.cb_loyaltyPoints.CheckedState.BorderRadius = 0;
             this.cb_loyaltyPoints.CheckedState.BorderThickness = 0;
             this.cb_loyaltyPoints.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_loyaltyPoints.Location = new System.Drawing.Point(124, 370);
+            this.cb_loyaltyPoints.Location = new System.Drawing.Point(124, 690);
             this.cb_loyaltyPoints.Name = "cb_loyaltyPoints";
-            this.cb_loyaltyPoints.Size = new System.Drawing.Size(106, 21);
+            this.cb_loyaltyPoints.Size = new System.Drawing.Size(101, 20);
             this.cb_loyaltyPoints.TabIndex = 12;
             this.cb_loyaltyPoints.Text = "Loyal points";
             this.cb_loyaltyPoints.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -164,9 +206,9 @@ namespace embul_thiyal
             // 
             this.lbl_phoneNumber.AutoSize = true;
             this.lbl_phoneNumber.Enabled = false;
-            this.lbl_phoneNumber.Location = new System.Drawing.Point(15, 426);
+            this.lbl_phoneNumber.Location = new System.Drawing.Point(15, 746);
             this.lbl_phoneNumber.Name = "lbl_phoneNumber";
-            this.lbl_phoneNumber.Size = new System.Drawing.Size(101, 17);
+            this.lbl_phoneNumber.Size = new System.Drawing.Size(94, 16);
             this.lbl_phoneNumber.TabIndex = 10;
             this.lbl_phoneNumber.Text = "Phone number";
             // 
@@ -174,27 +216,27 @@ namespace embul_thiyal
             // 
             this.lbl_availblePoints.AutoSize = true;
             this.lbl_availblePoints.Enabled = false;
-            this.lbl_availblePoints.Location = new System.Drawing.Point(404, 428);
+            this.lbl_availblePoints.Location = new System.Drawing.Point(404, 748);
             this.lbl_availblePoints.Name = "lbl_availblePoints";
-            this.lbl_availblePoints.Size = new System.Drawing.Size(107, 17);
+            this.lbl_availblePoints.Size = new System.Drawing.Size(103, 16);
             this.lbl_availblePoints.TabIndex = 10;
             this.lbl_availblePoints.Text = "Available points";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(49, 192);
+            this.label6.Location = new System.Drawing.Point(49, 512);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 17);
+            this.label6.Size = new System.Drawing.Size(58, 16);
             this.label6.TabIndex = 10;
             this.label6.Text = "Quantitiy";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(268, 192);
+            this.label3.Location = new System.Drawing.Point(268, 512);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 17);
+            this.label3.Size = new System.Drawing.Size(64, 16);
             this.label3.TabIndex = 10;
             this.label3.Text = "Unit Price";
             // 
@@ -203,7 +245,7 @@ namespace embul_thiyal
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(45, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 17);
+            this.label2.Size = new System.Drawing.Size(50, 16);
             this.label2.TabIndex = 10;
             this.label2.Text = "Search";
             // 
@@ -212,16 +254,16 @@ namespace embul_thiyal
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(45, 103);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 17);
+            this.label4.Size = new System.Drawing.Size(68, 16);
             this.label4.TabIndex = 10;
             this.label4.Text = "Item Code";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 148);
+            this.label1.Location = new System.Drawing.Point(45, 468);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 17);
+            this.label1.Size = new System.Drawing.Size(69, 16);
             this.label1.TabIndex = 10;
             this.label1.Text = "Item name";
             // 
@@ -237,7 +279,7 @@ namespace embul_thiyal
             this.txt_mobileNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_mobileNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_mobileNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_mobileNumber.Location = new System.Drawing.Point(140, 420);
+            this.txt_mobileNumber.Location = new System.Drawing.Point(140, 740);
             this.txt_mobileNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_mobileNumber.Name = "txt_mobileNumber";
             this.txt_mobileNumber.PasswordChar = '\0';
@@ -257,7 +299,7 @@ namespace embul_thiyal
             this.txt_quantity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_quantity.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_quantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_quantity.Location = new System.Drawing.Point(140, 185);
+            this.txt_quantity.Location = new System.Drawing.Point(140, 505);
             this.txt_quantity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_quantity.Name = "txt_quantity";
             this.txt_quantity.PasswordChar = '\0';
@@ -277,7 +319,7 @@ namespace embul_thiyal
             this.txt_uPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_uPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_uPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_uPrice.Location = new System.Drawing.Point(363, 185);
+            this.txt_uPrice.Location = new System.Drawing.Point(363, 505);
             this.txt_uPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_uPrice.Name = "txt_uPrice";
             this.txt_uPrice.PasswordChar = '\0';
@@ -330,33 +372,33 @@ namespace embul_thiyal
             // 
             // dgv_item
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv_item.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_item.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgv_item.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_item.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_item.ColumnHeadersHeight = 4;
             this.dgv_item.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_item.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_item.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_item.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_item.Location = new System.Drawing.Point(750, 68);
+            this.dgv_item.Location = new System.Drawing.Point(6, 174);
             this.dgv_item.Name = "dgv_item";
             this.dgv_item.RowHeadersVisible = false;
             this.dgv_item.RowHeadersWidth = 51;
             this.dgv_item.RowTemplate.Height = 24;
-            this.dgv_item.Size = new System.Drawing.Size(724, 545);
+            this.dgv_item.Size = new System.Drawing.Size(622, 232);
             this.dgv_item.TabIndex = 10;
             this.dgv_item.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_item.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -379,26 +421,204 @@ namespace embul_thiyal
             this.dgv_item.ThemeStyle.RowsStyle.Height = 24;
             this.dgv_item.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_item.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_item.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_item_CellContentClick);
             // 
-            // txt_iName
+            // panel1
             // 
-            this.txt_iName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_iName.DefaultText = "";
-            this.txt_iName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_iName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_iName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_iName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_iName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_iName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_iName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_iName.Location = new System.Drawing.Point(140, 140);
-            this.txt_iName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_iName.Name = "txt_iName";
-            this.txt_iName.PasswordChar = '\0';
-            this.txt_iName.PlaceholderText = "";
-            this.txt_iName.SelectedText = "";
-            this.txt_iName.Size = new System.Drawing.Size(244, 32);
-            this.txt_iName.TabIndex = 14;
+            this.panel1.Controls.Add(this.label25);
+            this.panel1.Controls.Add(this.label22);
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label24);
+            this.panel1.Controls.Add(this.label23);
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Location = new System.Drawing.Point(672, 22);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(769, 807);
+            this.panel1.TabIndex = 11;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(225, 31);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 16);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "label7";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(57, 138);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(44, 16);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "label8";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(163, 141);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(44, 16);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "label9";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(318, 143);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(51, 16);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "label10";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(57, 167);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(44, 16);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "label8";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(163, 170);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(44, 16);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "label9";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(318, 172);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(51, 16);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "label10";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(57, 197);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(44, 16);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "label8";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(163, 200);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(44, 16);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "label9";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(318, 202);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(51, 16);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "label10";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(57, 227);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(44, 16);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "label8";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(163, 230);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(44, 16);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "label9";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(318, 232);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(51, 16);
+            this.label19.TabIndex = 3;
+            this.label19.Text = "label10";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(57, 260);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(44, 16);
+            this.label20.TabIndex = 1;
+            this.label20.Text = "label8";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(163, 263);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(44, 16);
+            this.label21.TabIndex = 2;
+            this.label21.Text = "label9";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(318, 265);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(51, 16);
+            this.label22.TabIndex = 3;
+            this.label22.Text = "label10";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(57, 287);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(44, 16);
+            this.label23.TabIndex = 1;
+            this.label23.Text = "label8";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(163, 290);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(44, 16);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "label9";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(318, 292);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(51, 16);
+            this.label25.TabIndex = 3;
+            this.label25.Text = "label10";
             // 
             // frm_sale
             // 
@@ -406,7 +626,7 @@ namespace embul_thiyal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1800, 897);
-            this.Controls.Add(this.dgv_item);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.guna2Button5);
@@ -419,6 +639,8 @@ namespace embul_thiyal
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_item)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -446,5 +668,25 @@ namespace embul_thiyal
         private Guna.UI2.WinForms.Guna2TextBox txt_itemCode;
         private Guna.UI2.WinForms.Guna2Button btn_select;
         private Guna.UI2.WinForms.Guna2TextBox txt_iName;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
     }
 }
