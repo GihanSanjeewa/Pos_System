@@ -30,5 +30,15 @@ namespace embul_thiyal
             this.Hide();
             home.Show();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_search_customer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
