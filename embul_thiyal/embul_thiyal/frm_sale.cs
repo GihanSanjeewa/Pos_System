@@ -144,5 +144,17 @@ namespace embul_thiyal
         {
 
         }
+
+        private void btn_add2Bill_Click(object sender, EventArgs e)
+        {
+            lbl_item1.Text = txt_iName.Text;
+            lbl_unitPrice.Text = txt_uPrice.Text;
+            lbl_qty1.Text = txt_quantity.Text;
+            //  lbl_tot1.Text = Convert.ToInt32( txt_iName.Text);
+
+          //  lbl_item2.Text = txt_iName.Text;
+            lbl_unitPrice.Text = txt_uPrice.Text;
+            lbl_qty1.Text = txt_quantity.Text;
+        }
     }
 }
