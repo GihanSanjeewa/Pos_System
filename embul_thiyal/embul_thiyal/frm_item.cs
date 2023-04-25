@@ -51,11 +51,7 @@ namespace embul_thiyal
 
         }
 
-        private void frm_item_Load(object sender, EventArgs e)
-        {
-            fndataLoad();
-        }
-
+        
         private void btn_search_Click(object sender, EventArgs e)
         {
             //    cls_connection.open_connection();

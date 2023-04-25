@@ -97,11 +97,11 @@ namespace embul_thiyal
             this.btn_search_customer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_search_customer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_search_customer.ForeColor = System.Drawing.Color.White;
-            this.btn_search_customer.Location = new System.Drawing.Point(154, 167);
+            this.btn_search_customer.Location = new System.Drawing.Point(204, 155);
             this.btn_search_customer.Name = "btn_search_customer";
             this.btn_search_customer.Size = new System.Drawing.Size(180, 45);
             this.btn_search_customer.TabIndex = 2;
-            this.btn_search_customer.Text = "Search";
+            this.btn_search_customer.Text = "Delete";
             this.btn_search_customer.Click += new System.EventHandler(this.btn_search_customer_Click);
             // 
             // guna2HtmlLabel1
