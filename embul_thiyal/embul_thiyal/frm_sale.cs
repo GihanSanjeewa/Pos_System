@@ -147,14 +147,107 @@ namespace embul_thiyal
 
         private void btn_add2Bill_Click(object sender, EventArgs e)
         {
-            lbl_item1.Text = txt_iName.Text;
-            lbl_unitPrice.Text = txt_uPrice.Text;
-            lbl_qty1.Text = txt_quantity.Text;
-            //  lbl_tot1.Text = Convert.ToInt32( txt_iName.Text);
+            if (lbl_item1.Text == "")
+            {
 
-          //  lbl_item2.Text = txt_iName.Text;
-            lbl_unitPrice.Text = txt_uPrice.Text;
-            lbl_qty1.Text = txt_quantity.Text;
+                lbl_item1.Text = txt_iName.Text;
+                lbl_unitPrice1.Text = txt_uPrice.Text;
+                lbl_qty1.Text = txt_quantity.Text;
+                lbl_tot1.Text = (Convert.ToInt32(lbl_unitPrice1.Text) * Convert.ToInt32(lbl_qty1.Text)).ToString();
+
+            }
+
+
+            else if (lbl_item2.Text == "")
+            {
+                lbl_item2.Text = txt_iName.Text;
+                lbl_unitPrice2.Text = txt_uPrice.Text;
+                lbl_qty2.Text = txt_quantity.Text;
+                lbl_tot2.Text = (Convert.ToInt32(lbl_unitPrice2.Text) * Convert.ToInt32(lbl_qty2.Text)).ToString();
+            }
+
+            else if (lbl_item3.Text == "")
+            {
+                lbl_item3.Text = txt_iName.Text;
+                lbl_unitPrice3.Text = txt_uPrice.Text;
+                lbl_qty3.Text = txt_quantity.Text;
+                lbl_tot3.Text = (Convert.ToInt32(lbl_unitPrice3.Text) * Convert.ToInt32(lbl_qty3.Text)).ToString();
+            }
+
+            else if (lbl_item4.Text == "")
+            {
+                lbl_item4.Text = txt_iName.Text;
+                lbl_unitPrice4.Text = txt_uPrice.Text;
+                lbl_qty4.Text = txt_quantity.Text;
+                lbl_tot4.Text = (Convert.ToInt32(lbl_unitPrice4.Text) * Convert.ToInt32(lbl_qty4.Text)).ToString();
+            }
+            else
+            {
+                lbl_item5.Text = txt_iName.Text;
+                lbl_unitPrice5.Text = txt_uPrice.Text;
+                lbl_qty5.Text = txt_quantity.Text;
+                lbl_tot5.Text = (Convert.ToInt32(lbl_unitPrice5.Text) * Convert.ToInt32(lbl_qty5.Text)).ToString();
+            }
+
+
+
+
+
+            //    if (lbl_tot5.Text == "")
+            //        {
+            //            if (lbl_tot4.Text == "")
+            //            {
+            //                if (lbl_tot3.Text == "")
+            //                {
+            //                    if (lbl_tot2.Text == "")
+            //                    {
+            //                        if (lbl_tot1.Text == "")
+            //                        {
+            //                            lbl_total.Text = "0";
+            //                        }
+            //                        else
+            //                        {
+            //                            lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text)).ToString();
+
+            //                        }
+            //                    }
+            //                    else
+            //                    {
+            //                        lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text)).ToString();
+
+            //                    }
+
+            //                }
+
+            //                else
+            //                {
+            //                    lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text)).ToString();
+            //                }
+
+
+            //            }
+
+            //            else
+            //            {
+            //                lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text) + Convert.ToInt32(lbl_tot4.Text)).ToString();
+
+            //            }
+
+            //        }
+
+            //        else
+            //        {
+            //            lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text) + Convert.ToInt32(lbl_tot4.Text) + Convert.ToInt32(lbl_tot5.Text)).ToString();
+
+            //        }
+
+
+            //    //  lbl_tot1.Text = Convert.ToInt32( txt_iName.Text);
+
+            //    //  lbl_item2.Text = txt_iName.Text;
+            //    //  lbl_unitPrice.Text = txt_uPrice.Text;
+            //    //  lbl_qty1.Text = txt_quantity.Text;
+            //
         }
     }
 }
