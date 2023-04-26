@@ -27,11 +27,11 @@ namespace embul_thiyal
 
         private void btn_filter_Click(object sender, EventArgs e)
         {
-            MySqlCommand cmd = new MySqlCommand("SELECT `invoice_num`, `invoice_date`, `amount` FROM `sale` WHERE `invoice_date` BETWEEN @d1 AND @d2 ", cls_connection.con);
+            MySqlCommand cmd = new MySqlCommand("SELECT  `itemID`,`itemName`,`sale_ItemQty`,`total_Item_price`  FROM `salesitem` WHERE `saleDate` BETWEEN @dtp_start AND @dtp_end ", cls_connection.con);
 
 
-            cmd.Parameters.Add("@d1", MySqlDbType.Date).Value = dtp_start.Value;
-            cmd.Parameters.Add("@d2", MySqlDbType.Date).Value = dtp_end.Value;
+            cmd.Parameters.Add("@dtp_start", MySqlDbType.Date).Value = dtp_start.Value;
+            cmd.Parameters.Add("@dtp_end", MySqlDbType.Date).Value = dtp_end.Value;
             MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
             DataTable table = new DataTable();
             adapter.Fill(table);
@@ -45,7 +45,7 @@ namespace embul_thiyal
             int sum = 0;
             for (int i = 0; i < dataGridView1.Rows.Count; ++i)
             {
-                sum += Convert.ToInt32(dataGridView1.Rows[i].Cells[2].Value);
+                sum += Convert.ToInt32(dataGridView1.Rows[i].Cells[3].Value);
             }
             lbl_tot.Text = sum.ToString();
         }
