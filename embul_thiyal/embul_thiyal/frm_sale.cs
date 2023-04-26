@@ -144,110 +144,357 @@ namespace embul_thiyal
         {
 
         }
+        private void process1()
+        {
+            lbl_item1.Text = txt_iName.Text;
+            lbl_unitPrice1.Text = txt_uPrice.Text;
+            lbl_qty1.Text = txt_quantity.Text;
+            lbl_tot1.Text = (Convert.ToInt32(lbl_unitPrice1.Text) * Convert.ToInt32(lbl_qty1.Text)).ToString();
+
+            lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text)).ToString();
+        }
+        private void process2()
+        {
+            lbl_item2.Text = txt_iName.Text;
+            lbl_unitPrice2.Text = txt_uPrice.Text;
+            lbl_qty2.Text = txt_quantity.Text;
+            lbl_tot2.Text = (Convert.ToInt32(lbl_unitPrice2.Text) * Convert.ToInt32(lbl_qty2.Text)).ToString();
+
+            lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text)).ToString();
+        }
+        private void process3()
+        {
+            lbl_item3.Text = txt_iName.Text;
+            lbl_unitPrice3.Text = txt_uPrice.Text;
+            lbl_qty3.Text = txt_quantity.Text;
+            lbl_tot3.Text = (Convert.ToInt32(lbl_unitPrice3.Text) * Convert.ToInt32(lbl_qty3.Text)).ToString();
+
+            lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text)).ToString();
+        }
+        private void process4()
+        {
+            lbl_item4.Text = txt_iName.Text;
+            lbl_unitPrice4.Text = txt_uPrice.Text;
+            lbl_qty4.Text = txt_quantity.Text;
+            lbl_tot4.Text = (Convert.ToInt32(lbl_unitPrice4.Text) * Convert.ToInt32(lbl_qty4.Text)).ToString();
+
+            lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text) + Convert.ToInt32(lbl_tot4.Text)).ToString();
+        }
+        private void process5()
+        {
+            lbl_item5.Text = txt_iName.Text;
+            lbl_unitPrice5.Text = txt_uPrice.Text;
+            lbl_qty5.Text = txt_quantity.Text;
+            lbl_tot5.Text = (Convert.ToInt32(lbl_unitPrice5.Text) * Convert.ToInt32(lbl_qty5.Text)).ToString();
+
+            lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text) + Convert.ToInt32(lbl_tot4.Text) + Convert.ToInt32(lbl_tot5.Text)).ToString();
+        }
+
+        private void billTot()
+        {
+
+            lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text)+ Convert.ToInt32(lbl_tot3.Text)+ Convert.ToInt32(lbl_tot4.Text)+ Convert.ToInt32(lbl_tot5.Text)).ToString();
+        }
 
         private void btn_add2Bill_Click(object sender, EventArgs e)
         {
             if (lbl_item1.Text == "")
             {
+                process1();
+               
 
-                lbl_item1.Text = txt_iName.Text;
-                lbl_unitPrice1.Text = txt_uPrice.Text;
-                lbl_qty1.Text = txt_quantity.Text;
-                lbl_tot1.Text = (Convert.ToInt32(lbl_unitPrice1.Text) * Convert.ToInt32(lbl_qty1.Text)).ToString();
 
             }
-
-
             else if (lbl_item2.Text == "")
             {
-                lbl_item2.Text = txt_iName.Text;
-                lbl_unitPrice2.Text = txt_uPrice.Text;
-                lbl_qty2.Text = txt_quantity.Text;
-                lbl_tot2.Text = (Convert.ToInt32(lbl_unitPrice2.Text) * Convert.ToInt32(lbl_qty2.Text)).ToString();
+                process2();
+               
+
+
             }
 
             else if (lbl_item3.Text == "")
             {
-                lbl_item3.Text = txt_iName.Text;
-                lbl_unitPrice3.Text = txt_uPrice.Text;
-                lbl_qty3.Text = txt_quantity.Text;
-                lbl_tot3.Text = (Convert.ToInt32(lbl_unitPrice3.Text) * Convert.ToInt32(lbl_qty3.Text)).ToString();
+                process3();
+             
+
+
             }
 
             else if (lbl_item4.Text == "")
             {
-                lbl_item4.Text = txt_iName.Text;
-                lbl_unitPrice4.Text = txt_uPrice.Text;
-                lbl_qty4.Text = txt_quantity.Text;
-                lbl_tot4.Text = (Convert.ToInt32(lbl_unitPrice4.Text) * Convert.ToInt32(lbl_qty4.Text)).ToString();
+                process4();
+              
             }
             else
             {
-                lbl_item5.Text = txt_iName.Text;
-                lbl_unitPrice5.Text = txt_uPrice.Text;
-                lbl_qty5.Text = txt_quantity.Text;
-                lbl_tot5.Text = (Convert.ToInt32(lbl_unitPrice5.Text) * Convert.ToInt32(lbl_qty5.Text)).ToString();
+                process5();
+             
+
             }
 
 
 
 
 
-            //    if (lbl_tot5.Text == "")
-            //        {
-            //            if (lbl_tot4.Text == "")
-            //            {
-            //                if (lbl_tot3.Text == "")
-            //                {
-            //                    if (lbl_tot2.Text == "")
-            //                    {
-            //                        if (lbl_tot1.Text == "")
-            //                        {
-            //                            lbl_total.Text = "0";
-            //                        }
-            //                        else
-            //                        {
-            //                            lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text)).ToString();
+        }
+        private void clear5()
+        {
+            lbl_item5.Text = "";
+            lbl_qty5.Text = "";
+            lbl_tot5.Text = "";
+            lbl_unitPrice5.Text = "";
+            btn_remove5.Visible = false;
+        }
+        private void clear4()
+        {
+            lbl_item4.Text = "";
+            lbl_qty4.Text = "";
+            lbl_tot4.Text = "";
+            lbl_unitPrice4.Text = "";
+            btn_remove4.Visible = false;
+        }
+        private void clear3()
+        {
+            lbl_item3.Text = "";
+            lbl_qty3.Text = "";
+            lbl_tot3.Text = "";
+            lbl_unitPrice3.Text = "";
+            btn_remove3.Visible = false;
 
-            //                        }
-            //                    }
-            //                    else
-            //                    {
-            //                        lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text)).ToString();
+        }
+        private void clear2()
+        {
 
-            //                    }
+            lbl_item2.Text = "";
+            lbl_qty2.Text = "";
+            lbl_tot2.Text = "";
+            lbl_unitPrice2.Text = "";
+            btn_remove2.Visible = false;
 
-            //                }
+        }
+        private void clear1()
+        {
+            lbl_item1.Text = "";
+            lbl_qty1.Text = "";
+            lbl_tot1.Text = "";
+            lbl_unitPrice1.Text = "";
+            btn_remove1.Visible = false;
+        }
 
-            //                else
-            //                {
-            //                    lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text)).ToString();
-            //                }
+        private void btn_remove5_Click(object sender, EventArgs e)
+        {
+            clear5();
 
-
-            //            }
-
-            //            else
-            //            {
-            //                lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text) + Convert.ToInt32(lbl_tot4.Text)).ToString();
-
-            //            }
-
-            //        }
-
-            //        else
-            //        {
-            //            lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text) + Convert.ToInt32(lbl_tot4.Text) + Convert.ToInt32(lbl_tot5.Text)).ToString();
-
-            //        }
+            lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text) + Convert.ToInt32(lbl_tot4.Text)).ToString();
 
 
-            //    //  lbl_tot1.Text = Convert.ToInt32( txt_iName.Text);
+        }
 
-            //    //  lbl_item2.Text = txt_iName.Text;
-            //    //  lbl_unitPrice.Text = txt_uPrice.Text;
-            //    //  lbl_qty1.Text = txt_quantity.Text;
-            //
+        private void btn_remove4_Click(object sender, EventArgs e)
+        {
+
+
+            if (lbl_item5.Text!= "")
+            {
+                //shift by 1 raw
+                lbl_item4.Text =  lbl_item5.Text;
+                lbl_qty4.Text = lbl_qty5.Text;
+                lbl_tot4.Text = lbl_tot5.Text;
+                lbl_unitPrice4.Text = lbl_unitPrice5.Text;
+                btn_remove5.Visible = false;
+
+                //clear raw 5
+
+               clear5();
+
+                lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text) + Convert.ToInt32(lbl_tot4.Text)).ToString();
+
+
+            }
+            else
+            {
+
+                clear4();
+                lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text)).ToString();
+
+
+            }
+        }
+
+        private void btn_remove3_Click(object sender, EventArgs e)
+        {
+           
+
+            if (lbl_item4.Text != "")
+            {
+                //shift by 1 raw
+                lbl_item3.Text = lbl_item4.Text;
+                lbl_qty3.Text = lbl_qty4.Text;
+                lbl_tot3.Text = lbl_tot4.Text;
+                lbl_unitPrice3.Text = lbl_unitPrice4.Text;
+
+                clear4();
+
+                if(lbl_item5.Text != "")
+                {
+                    //shift by 1 raw
+                    lbl_item4.Text = lbl_item5.Text;
+                    lbl_qty4.Text = lbl_qty5.Text;
+                    lbl_tot4.Text = lbl_tot5.Text;
+                    lbl_unitPrice4.Text = lbl_unitPrice5.Text;
+                    btn_remove5.Visible = false;
+
+                    //clear raw 5
+
+                    clear5();
+                    lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text) + Convert.ToInt32(lbl_tot4.Text)).ToString();
+                }
+                else
+                {
+                    clear4();
+                    lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text)).ToString();
+                }    
+            }
+            else
+            {
+                clear3();
+                lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text)).ToString();
+            }
+        }
+
+        private void btn_remove2_Click(object sender, EventArgs e)
+        {
+           
+
+            if (lbl_item3.Text != "")
+            {
+                //shift by 1 raw
+                lbl_item2.Text = lbl_item3.Text;
+                lbl_qty2.Text = lbl_qty3.Text;
+                lbl_tot2.Text = lbl_tot3.Text;
+                lbl_unitPrice2.Text = lbl_unitPrice3.Text;
+
+                clear3();
+
+                if (lbl_item4.Text != "")
+                {
+                    //shift by 1 raw
+                    lbl_item3.Text = lbl_item4.Text;
+                    lbl_qty3.Text = lbl_qty4.Text;
+                    lbl_tot3.Text = lbl_tot4.Text;
+                    lbl_unitPrice3.Text = lbl_unitPrice4.Text;
+                    btn_remove3.Visible = false;
+
+                    if (lbl_item5.Text != "")
+                    {
+                        //shift by 1 raw
+                        lbl_item4.Text = lbl_item5.Text;
+                        lbl_qty4.Text = lbl_qty5.Text;
+                        lbl_tot4.Text = lbl_tot5.Text;
+                        lbl_unitPrice4.Text = lbl_unitPrice5.Text;
+                        btn_remove5.Visible = false;
+
+                        //clear raw 5
+
+                        clear5();
+
+                        lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text) + Convert.ToInt32(lbl_tot4.Text)).ToString();
+                    }
+                    else
+                    {
+                        clear4();
+                        lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text)).ToString();
+                    }
+                }
+                else
+                {
+                    clear3();
+                    lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text)).ToString();
+                }
+
+            }
+            else
+            {
+                clear2();
+                lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text)).ToString();
+            }
+        }
+
+        private void btn_remove1_Click(object sender, EventArgs e)
+        {
+
+           
+
+            if (lbl_item2.Text != "")
+            {
+                //shift by 1 raw
+                lbl_item1.Text = lbl_item2.Text;
+                lbl_qty1.Text = lbl_qty2.Text;
+                lbl_tot1.Text = lbl_tot2.Text;
+                lbl_unitPrice1.Text = lbl_unitPrice2.Text;
+
+                clear2();
+
+                if (lbl_item3.Text != "")
+                {
+                    //shift by 1 raw
+                    lbl_item2.Text = lbl_item3.Text;
+                    lbl_qty2.Text = lbl_qty3.Text;
+                    lbl_tot2.Text = lbl_tot3.Text;
+                    lbl_unitPrice2.Text = lbl_unitPrice3.Text;
+                    btn_remove3.Visible = false;
+
+                    if (lbl_item4.Text != "")
+                    {
+                        //shift by 1 raw
+                        lbl_item3.Text = lbl_item4.Text;
+                        lbl_qty3.Text = lbl_qty4.Text;
+                        lbl_tot3.Text = lbl_tot4.Text;
+                        lbl_unitPrice3.Text = lbl_unitPrice4.Text;
+                        btn_remove3.Visible = false;
+
+                        if (lbl_item5.Text != "")
+                        {
+                            //shift by 1 raw
+                            lbl_item4.Text = lbl_item5.Text;
+                            lbl_qty4.Text = lbl_qty5.Text;
+                            lbl_tot4.Text = lbl_tot5.Text;
+                            lbl_unitPrice4.Text = lbl_unitPrice5.Text;
+                            btn_remove5.Visible = false;
+
+                            //clear raw 5
+
+                            clear5();
+                            lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text) + Convert.ToInt32(lbl_tot4.Text)).ToString();
+                        }
+                        else
+                        {
+                            clear4();
+                            lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text)).ToString();
+                        }
+                       
+                    }
+                    else
+                    {
+                        clear3();
+                        lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text)).ToString();
+                    }
+                  
+                }
+                else
+                {
+                    clear2();
+                    lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text)).ToString();
+                }
+               
+            }
+            else
+            {
+                clear1();
+                lbl_total.Text = "0";
+
+            }
         }
     }
 }
