@@ -19,7 +19,6 @@ C:\Users\gihan\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bi
 C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\embul_thiyal.exe.config
 C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\embul_thiyal.exe
 C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\embul_thiyal.pdb
-C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\Guna.UI2.dll
 C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.csproj.AssemblyReference.cache
 C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.frm_home.resources
 C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.frm_customer.resources
@@ -127,3 +126,41 @@ C:\Users\wONd3r\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\
 C:\Users\wONd3r\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.csproj.CopyComplete
 C:\Users\wONd3r\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.exe
 C:\Users\wONd3r\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.pdb
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\Autofac.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\Bunifu.UI.WinForms.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\Microsoft.Win32.Registry.AccessControl.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\Microsoft.Win32.SystemEvents.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\RestSharp.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Buffers.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.CodeDom.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Data.Odbc.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Data.OleDb.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Diagnostics.EventLog.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Drawing.Common.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.IO.FileSystem.AccessControl.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.IO.Packaging.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.IO.Ports.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Memory.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Security.Cryptography.Cng.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Security.Permissions.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.ServiceModel.Syndication.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.ServiceProcess.ServiceController.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Threading.AccessControl.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.csproj.Fody.CopyLocal.cache

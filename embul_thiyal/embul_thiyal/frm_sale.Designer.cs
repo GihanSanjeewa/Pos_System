@@ -56,28 +56,28 @@ namespace embul_thiyal
             this.lbl_tot1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_item2 = new System.Windows.Forms.Label();
-            this.lbl_qty2 = new System.Windows.Forms.Label();
-            this.lbl_unitPrice2 = new System.Windows.Forms.Label();
-            this.lbl_tot2 = new System.Windows.Forms.Label();
-            this.lbl_item3 = new System.Windows.Forms.Label();
-            this.lbl_qty3 = new System.Windows.Forms.Label();
-            this.lbl_unitPrice3 = new System.Windows.Forms.Label();
-            this.lbl_tot3 = new System.Windows.Forms.Label();
-            this.lbl_item4 = new System.Windows.Forms.Label();
-            this.lbl_qty4 = new System.Windows.Forms.Label();
-            this.lbl_unitPrice4 = new System.Windows.Forms.Label();
-            this.lbl_tot4 = new System.Windows.Forms.Label();
-            this.lbl_item5 = new System.Windows.Forms.Label();
-            this.lbl_qty5 = new System.Windows.Forms.Label();
-            this.lbl_unitPrice5 = new System.Windows.Forms.Label();
-            this.lbl_tot5 = new System.Windows.Forms.Label();
-            this.lbl_total = new System.Windows.Forms.Label();
-            this.btn_remove1 = new System.Windows.Forms.Button();
-            this.btn_remove2 = new System.Windows.Forms.Button();
-            this.btn_remove3 = new System.Windows.Forms.Button();
-            this.btn_remove4 = new System.Windows.Forms.Button();
             this.btn_remove5 = new System.Windows.Forms.Button();
+            this.btn_remove4 = new System.Windows.Forms.Button();
+            this.btn_remove3 = new System.Windows.Forms.Button();
+            this.btn_remove2 = new System.Windows.Forms.Button();
+            this.btn_remove1 = new System.Windows.Forms.Button();
+            this.lbl_tot5 = new System.Windows.Forms.Label();
+            this.lbl_tot4 = new System.Windows.Forms.Label();
+            this.lbl_tot3 = new System.Windows.Forms.Label();
+            this.lbl_tot2 = new System.Windows.Forms.Label();
+            this.lbl_unitPrice5 = new System.Windows.Forms.Label();
+            this.lbl_unitPrice4 = new System.Windows.Forms.Label();
+            this.lbl_unitPrice3 = new System.Windows.Forms.Label();
+            this.lbl_unitPrice2 = new System.Windows.Forms.Label();
+            this.lbl_qty5 = new System.Windows.Forms.Label();
+            this.lbl_qty4 = new System.Windows.Forms.Label();
+            this.lbl_qty3 = new System.Windows.Forms.Label();
+            this.lbl_qty2 = new System.Windows.Forms.Label();
+            this.lbl_item5 = new System.Windows.Forms.Label();
+            this.lbl_item4 = new System.Windows.Forms.Label();
+            this.lbl_item3 = new System.Windows.Forms.Label();
+            this.lbl_item2 = new System.Windows.Forms.Label();
+            this.lbl_total = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_item)).BeginInit();
             this.panel1.SuspendLayout();
@@ -466,11 +466,11 @@ namespace embul_thiyal
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(140, 18);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(107, 18);
+            this.label8.Size = new System.Drawing.Size(106, 20);
             this.label8.TabIndex = 0;
             this.label8.Text = "Embul thiyal";
             // 
@@ -482,8 +482,8 @@ namespace embul_thiyal
             this.panel1.Controls.Add(this.btn_remove3);
             this.panel1.Controls.Add(this.btn_remove2);
             this.panel1.Controls.Add(this.btn_remove1);
-            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.lbl_total);
+            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.lbl_tot5);
             this.panel1.Controls.Add(this.lbl_tot4);
             this.panel1.Controls.Add(this.lbl_tot3);
@@ -505,175 +505,65 @@ namespace embul_thiyal
             this.panel1.Controls.Add(this.lbl_item2);
             this.panel1.Controls.Add(this.lbl_item1);
             this.panel1.Location = new System.Drawing.Point(582, 21);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(376, 659);
             this.panel1.TabIndex = 10;
             // 
-            // lbl_item2
+            // btn_remove5
             // 
-            this.lbl_item2.AutoSize = true;
-            this.lbl_item2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_item2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_item2.Location = new System.Drawing.Point(31, 139);
-            this.lbl_item2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_item2.Name = "lbl_item2";
-            this.lbl_item2.Size = new System.Drawing.Size(0, 13);
-            this.lbl_item2.TabIndex = 10;
+            this.btn_remove5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_remove5.Location = new System.Drawing.Point(311, 230);
+            this.btn_remove5.Name = "btn_remove5";
+            this.btn_remove5.Size = new System.Drawing.Size(32, 25);
+            this.btn_remove5.TabIndex = 11;
+            this.btn_remove5.Text = "-";
+            this.btn_remove5.UseVisualStyleBackColor = true;
+            this.btn_remove5.Click += new System.EventHandler(this.btn_remove5_Click);
             // 
-            // lbl_qty2
+            // btn_remove4
             // 
-            this.lbl_qty2.AutoSize = true;
-            this.lbl_qty2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_qty2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_qty2.Location = new System.Drawing.Point(192, 139);
-            this.lbl_qty2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_qty2.Name = "lbl_qty2";
-            this.lbl_qty2.Size = new System.Drawing.Size(0, 13);
-            this.lbl_qty2.TabIndex = 10;
+            this.btn_remove4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_remove4.Location = new System.Drawing.Point(311, 197);
+            this.btn_remove4.Name = "btn_remove4";
+            this.btn_remove4.Size = new System.Drawing.Size(32, 25);
+            this.btn_remove4.TabIndex = 11;
+            this.btn_remove4.Text = "-";
+            this.btn_remove4.UseVisualStyleBackColor = true;
+            this.btn_remove4.Click += new System.EventHandler(this.btn_remove4_Click);
             // 
-            // lbl_unitPrice2
+            // btn_remove3
             // 
-            this.lbl_unitPrice2.AutoSize = true;
-            this.lbl_unitPrice2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_unitPrice2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_unitPrice2.Location = new System.Drawing.Point(109, 139);
-            this.lbl_unitPrice2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_unitPrice2.Name = "lbl_unitPrice2";
-            this.lbl_unitPrice2.Size = new System.Drawing.Size(0, 13);
-            this.lbl_unitPrice2.TabIndex = 10;
+            this.btn_remove3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_remove3.Location = new System.Drawing.Point(311, 160);
+            this.btn_remove3.Name = "btn_remove3";
+            this.btn_remove3.Size = new System.Drawing.Size(32, 25);
+            this.btn_remove3.TabIndex = 11;
+            this.btn_remove3.Text = "-";
+            this.btn_remove3.UseVisualStyleBackColor = true;
+            this.btn_remove3.Click += new System.EventHandler(this.btn_remove3_Click);
             // 
-            // lbl_tot2
+            // btn_remove2
             // 
-            this.lbl_tot2.AutoSize = true;
-            this.lbl_tot2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_tot2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_tot2.Location = new System.Drawing.Point(263, 139);
-            this.lbl_tot2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_tot2.Name = "lbl_tot2";
-            this.lbl_tot2.Size = new System.Drawing.Size(0, 13);
-            this.lbl_tot2.TabIndex = 10;
+            this.btn_remove2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_remove2.Location = new System.Drawing.Point(311, 127);
+            this.btn_remove2.Name = "btn_remove2";
+            this.btn_remove2.Size = new System.Drawing.Size(32, 25);
+            this.btn_remove2.TabIndex = 11;
+            this.btn_remove2.Text = "-";
+            this.btn_remove2.UseVisualStyleBackColor = true;
+            this.btn_remove2.Click += new System.EventHandler(this.btn_remove2_Click);
             // 
-            // lbl_item3
+            // btn_remove1
             // 
-            this.lbl_item3.AutoSize = true;
-            this.lbl_item3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_item3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_item3.Location = new System.Drawing.Point(31, 172);
-            this.lbl_item3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_item3.Name = "lbl_item3";
-            this.lbl_item3.Size = new System.Drawing.Size(0, 13);
-            this.lbl_item3.TabIndex = 10;
-            // 
-            // lbl_qty3
-            // 
-            this.lbl_qty3.AutoSize = true;
-            this.lbl_qty3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_qty3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_qty3.Location = new System.Drawing.Point(192, 172);
-            this.lbl_qty3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_qty3.Name = "lbl_qty3";
-            this.lbl_qty3.Size = new System.Drawing.Size(0, 13);
-            this.lbl_qty3.TabIndex = 10;
-            // 
-            // lbl_unitPrice3
-            // 
-            this.lbl_unitPrice3.AutoSize = true;
-            this.lbl_unitPrice3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_unitPrice3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_unitPrice3.Location = new System.Drawing.Point(109, 172);
-            this.lbl_unitPrice3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_unitPrice3.Name = "lbl_unitPrice3";
-            this.lbl_unitPrice3.Size = new System.Drawing.Size(0, 13);
-            this.lbl_unitPrice3.TabIndex = 10;
-            // 
-            // lbl_tot3
-            // 
-            this.lbl_tot3.AutoSize = true;
-            this.lbl_tot3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_tot3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_tot3.Location = new System.Drawing.Point(263, 172);
-            this.lbl_tot3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_tot3.Name = "lbl_tot3";
-            this.lbl_tot3.Size = new System.Drawing.Size(0, 13);
-            this.lbl_tot3.TabIndex = 10;
-            // 
-            // lbl_item4
-            // 
-            this.lbl_item4.AutoSize = true;
-            this.lbl_item4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_item4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_item4.Location = new System.Drawing.Point(31, 204);
-            this.lbl_item4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_item4.Name = "lbl_item4";
-            this.lbl_item4.Size = new System.Drawing.Size(0, 13);
-            this.lbl_item4.TabIndex = 10;
-            // 
-            // lbl_qty4
-            // 
-            this.lbl_qty4.AutoSize = true;
-            this.lbl_qty4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_qty4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_qty4.Location = new System.Drawing.Point(192, 204);
-            this.lbl_qty4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_qty4.Name = "lbl_qty4";
-            this.lbl_qty4.Size = new System.Drawing.Size(0, 13);
-            this.lbl_qty4.TabIndex = 10;
-            // 
-            // lbl_unitPrice4
-            // 
-            this.lbl_unitPrice4.AutoSize = true;
-            this.lbl_unitPrice4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_unitPrice4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_unitPrice4.Location = new System.Drawing.Point(109, 204);
-            this.lbl_unitPrice4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_unitPrice4.Name = "lbl_unitPrice4";
-            this.lbl_unitPrice4.Size = new System.Drawing.Size(0, 13);
-            this.lbl_unitPrice4.TabIndex = 10;
-            // 
-            // lbl_tot4
-            // 
-            this.lbl_tot4.AutoSize = true;
-            this.lbl_tot4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_tot4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_tot4.Location = new System.Drawing.Point(263, 204);
-            this.lbl_tot4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_tot4.Name = "lbl_tot4";
-            this.lbl_tot4.Size = new System.Drawing.Size(0, 13);
-            this.lbl_tot4.TabIndex = 10;
-            // 
-            // lbl_item5
-            // 
-            this.lbl_item5.AutoSize = true;
-            this.lbl_item5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_item5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_item5.Location = new System.Drawing.Point(31, 237);
-            this.lbl_item5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_item5.Name = "lbl_item5";
-            this.lbl_item5.Size = new System.Drawing.Size(0, 13);
-            this.lbl_item5.TabIndex = 10;
-            // 
-            // lbl_qty5
-            // 
-            this.lbl_qty5.AutoSize = true;
-            this.lbl_qty5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_qty5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_qty5.Location = new System.Drawing.Point(192, 237);
-            this.lbl_qty5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_qty5.Name = "lbl_qty5";
-            this.lbl_qty5.Size = new System.Drawing.Size(0, 13);
-            this.lbl_qty5.TabIndex = 10;
-            // 
-            // lbl_unitPrice5
-            // 
-            this.lbl_unitPrice5.AutoSize = true;
-            this.lbl_unitPrice5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_unitPrice5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_unitPrice5.Location = new System.Drawing.Point(109, 237);
-            this.lbl_unitPrice5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_unitPrice5.Name = "lbl_unitPrice5";
-            this.lbl_unitPrice5.Size = new System.Drawing.Size(0, 13);
-            this.lbl_unitPrice5.TabIndex = 10;
+            this.btn_remove1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_remove1.Location = new System.Drawing.Point(311, 98);
+            this.btn_remove1.Name = "btn_remove1";
+            this.btn_remove1.Size = new System.Drawing.Size(32, 25);
+            this.btn_remove1.TabIndex = 11;
+            this.btn_remove1.Text = "-";
+            this.btn_remove1.UseVisualStyleBackColor = true;
+            this.btn_remove1.Click += new System.EventHandler(this.btn_remove1_Click);
             // 
             // lbl_tot5
             // 
@@ -686,67 +576,181 @@ namespace embul_thiyal
             this.lbl_tot5.Size = new System.Drawing.Size(0, 13);
             this.lbl_tot5.TabIndex = 10;
             // 
+            // lbl_tot4
+            // 
+            this.lbl_tot4.AutoSize = true;
+            this.lbl_tot4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_tot4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_tot4.Location = new System.Drawing.Point(263, 204);
+            this.lbl_tot4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_tot4.Name = "lbl_tot4";
+            this.lbl_tot4.Size = new System.Drawing.Size(0, 13);
+            this.lbl_tot4.TabIndex = 10;
+            // 
+            // lbl_tot3
+            // 
+            this.lbl_tot3.AutoSize = true;
+            this.lbl_tot3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_tot3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_tot3.Location = new System.Drawing.Point(263, 172);
+            this.lbl_tot3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_tot3.Name = "lbl_tot3";
+            this.lbl_tot3.Size = new System.Drawing.Size(0, 13);
+            this.lbl_tot3.TabIndex = 10;
+            // 
+            // lbl_tot2
+            // 
+            this.lbl_tot2.AutoSize = true;
+            this.lbl_tot2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_tot2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_tot2.Location = new System.Drawing.Point(263, 139);
+            this.lbl_tot2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_tot2.Name = "lbl_tot2";
+            this.lbl_tot2.Size = new System.Drawing.Size(0, 13);
+            this.lbl_tot2.TabIndex = 10;
+            // 
+            // lbl_unitPrice5
+            // 
+            this.lbl_unitPrice5.AutoSize = true;
+            this.lbl_unitPrice5.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_unitPrice5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_unitPrice5.Location = new System.Drawing.Point(109, 237);
+            this.lbl_unitPrice5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_unitPrice5.Name = "lbl_unitPrice5";
+            this.lbl_unitPrice5.Size = new System.Drawing.Size(0, 13);
+            this.lbl_unitPrice5.TabIndex = 10;
+            // 
+            // lbl_unitPrice4
+            // 
+            this.lbl_unitPrice4.AutoSize = true;
+            this.lbl_unitPrice4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_unitPrice4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_unitPrice4.Location = new System.Drawing.Point(109, 204);
+            this.lbl_unitPrice4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_unitPrice4.Name = "lbl_unitPrice4";
+            this.lbl_unitPrice4.Size = new System.Drawing.Size(0, 13);
+            this.lbl_unitPrice4.TabIndex = 10;
+            // 
+            // lbl_unitPrice3
+            // 
+            this.lbl_unitPrice3.AutoSize = true;
+            this.lbl_unitPrice3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_unitPrice3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_unitPrice3.Location = new System.Drawing.Point(109, 172);
+            this.lbl_unitPrice3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_unitPrice3.Name = "lbl_unitPrice3";
+            this.lbl_unitPrice3.Size = new System.Drawing.Size(0, 13);
+            this.lbl_unitPrice3.TabIndex = 10;
+            // 
+            // lbl_unitPrice2
+            // 
+            this.lbl_unitPrice2.AutoSize = true;
+            this.lbl_unitPrice2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_unitPrice2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_unitPrice2.Location = new System.Drawing.Point(109, 139);
+            this.lbl_unitPrice2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_unitPrice2.Name = "lbl_unitPrice2";
+            this.lbl_unitPrice2.Size = new System.Drawing.Size(0, 13);
+            this.lbl_unitPrice2.TabIndex = 10;
+            // 
+            // lbl_qty5
+            // 
+            this.lbl_qty5.AutoSize = true;
+            this.lbl_qty5.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_qty5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_qty5.Location = new System.Drawing.Point(192, 237);
+            this.lbl_qty5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_qty5.Name = "lbl_qty5";
+            this.lbl_qty5.Size = new System.Drawing.Size(0, 13);
+            this.lbl_qty5.TabIndex = 10;
+            // 
+            // lbl_qty4
+            // 
+            this.lbl_qty4.AutoSize = true;
+            this.lbl_qty4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_qty4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_qty4.Location = new System.Drawing.Point(192, 204);
+            this.lbl_qty4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_qty4.Name = "lbl_qty4";
+            this.lbl_qty4.Size = new System.Drawing.Size(0, 13);
+            this.lbl_qty4.TabIndex = 10;
+            // 
+            // lbl_qty3
+            // 
+            this.lbl_qty3.AutoSize = true;
+            this.lbl_qty3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_qty3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_qty3.Location = new System.Drawing.Point(192, 172);
+            this.lbl_qty3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_qty3.Name = "lbl_qty3";
+            this.lbl_qty3.Size = new System.Drawing.Size(0, 13);
+            this.lbl_qty3.TabIndex = 10;
+            // 
+            // lbl_qty2
+            // 
+            this.lbl_qty2.AutoSize = true;
+            this.lbl_qty2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_qty2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_qty2.Location = new System.Drawing.Point(192, 139);
+            this.lbl_qty2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_qty2.Name = "lbl_qty2";
+            this.lbl_qty2.Size = new System.Drawing.Size(0, 13);
+            this.lbl_qty2.TabIndex = 10;
+            // 
+            // lbl_item5
+            // 
+            this.lbl_item5.AutoSize = true;
+            this.lbl_item5.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_item5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_item5.Location = new System.Drawing.Point(31, 237);
+            this.lbl_item5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_item5.Name = "lbl_item5";
+            this.lbl_item5.Size = new System.Drawing.Size(0, 13);
+            this.lbl_item5.TabIndex = 10;
+            // 
+            // lbl_item4
+            // 
+            this.lbl_item4.AutoSize = true;
+            this.lbl_item4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_item4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_item4.Location = new System.Drawing.Point(31, 204);
+            this.lbl_item4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_item4.Name = "lbl_item4";
+            this.lbl_item4.Size = new System.Drawing.Size(0, 13);
+            this.lbl_item4.TabIndex = 10;
+            // 
+            // lbl_item3
+            // 
+            this.lbl_item3.AutoSize = true;
+            this.lbl_item3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_item3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_item3.Location = new System.Drawing.Point(31, 172);
+            this.lbl_item3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_item3.Name = "lbl_item3";
+            this.lbl_item3.Size = new System.Drawing.Size(0, 13);
+            this.lbl_item3.TabIndex = 10;
+            // 
+            // lbl_item2
+            // 
+            this.lbl_item2.AutoSize = true;
+            this.lbl_item2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_item2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_item2.Location = new System.Drawing.Point(31, 139);
+            this.lbl_item2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_item2.Name = "lbl_item2";
+            this.lbl_item2.Size = new System.Drawing.Size(0, 13);
+            this.lbl_item2.TabIndex = 10;
+            // 
             // lbl_total
             // 
             this.lbl_total.AutoSize = true;
-            this.lbl_total.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_total.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_total.Location = new System.Drawing.Point(263, 460);
+            this.lbl_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_total.Location = new System.Drawing.Point(157, 354);
             this.lbl_total.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_total.Name = "lbl_total";
-            this.lbl_total.Size = new System.Drawing.Size(13, 13);
-            this.lbl_total.TabIndex = 10;
-            this.lbl_total.Text = "4";
-            // 
-            // btn_remove1
-            // 
-            this.btn_remove1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_remove1.Location = new System.Drawing.Point(311, 98);
-            this.btn_remove1.Name = "btn_remove1";
-            this.btn_remove1.Size = new System.Drawing.Size(32, 25);
-            this.btn_remove1.TabIndex = 11;
-            this.btn_remove1.Text = "-";
-            this.btn_remove1.UseVisualStyleBackColor = true;
-            // 
-            // btn_remove2
-            // 
-            this.btn_remove2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_remove2.Location = new System.Drawing.Point(311, 127);
-            this.btn_remove2.Name = "btn_remove2";
-            this.btn_remove2.Size = new System.Drawing.Size(32, 25);
-            this.btn_remove2.TabIndex = 11;
-            this.btn_remove2.Text = "-";
-            this.btn_remove2.UseVisualStyleBackColor = true;
-            // 
-            // btn_remove3
-            // 
-            this.btn_remove3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_remove3.Location = new System.Drawing.Point(311, 160);
-            this.btn_remove3.Name = "btn_remove3";
-            this.btn_remove3.Size = new System.Drawing.Size(32, 25);
-            this.btn_remove3.TabIndex = 11;
-            this.btn_remove3.Text = "-";
-            this.btn_remove3.UseVisualStyleBackColor = true;
-            // 
-            // btn_remove4
-            // 
-            this.btn_remove4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_remove4.Location = new System.Drawing.Point(311, 197);
-            this.btn_remove4.Name = "btn_remove4";
-            this.btn_remove4.Size = new System.Drawing.Size(32, 25);
-            this.btn_remove4.TabIndex = 11;
-            this.btn_remove4.Text = "-";
-            this.btn_remove4.UseVisualStyleBackColor = true;
-            // 
-            // btn_remove5
-            // 
-            this.btn_remove5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_remove5.Location = new System.Drawing.Point(311, 230);
-            this.btn_remove5.Name = "btn_remove5";
-            this.btn_remove5.Size = new System.Drawing.Size(32, 25);
-            this.btn_remove5.TabIndex = 11;
-            this.btn_remove5.Text = "-";
-            this.btn_remove5.UseVisualStyleBackColor = true;
+            this.lbl_total.Size = new System.Drawing.Size(49, 20);
+            this.lbl_total.TabIndex = 0;
+            this.lbl_total.Text = "Total";
             // 
             // frm_sale
             // 
@@ -818,11 +822,11 @@ namespace embul_thiyal
         private System.Windows.Forms.Label lbl_item4;
         private System.Windows.Forms.Label lbl_item3;
         private System.Windows.Forms.Label lbl_item2;
-        private System.Windows.Forms.Label lbl_total;
         private System.Windows.Forms.Button btn_remove5;
         private System.Windows.Forms.Button btn_remove4;
         private System.Windows.Forms.Button btn_remove3;
         private System.Windows.Forms.Button btn_remove2;
         private System.Windows.Forms.Button btn_remove1;
+        private System.Windows.Forms.Label lbl_total;
     }
 }
