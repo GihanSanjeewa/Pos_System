@@ -27,7 +27,7 @@ namespace embul_thiyal
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            login();
+          //  login();
 
             string username, password;
 
@@ -47,11 +47,11 @@ namespace embul_thiyal
                     password = txt_password.Text;
 
 
-                    DateTime dt1 = DateTime.Now;
-                    DateTime dt2 = DateTime.Parse("01/01/2024");
+                    //DateTime dt1 = DateTime.Now;
+                    //DateTime dt2 = DateTime.Parse("01/01/2024");
 
-                    int dataDiff = ((TimeSpan)(dt2 - dt1)).Days;
-                    MessageBox.Show("Welcome.You have " + dataDiff + " days to expire the software");
+                    //int dataDiff = ((TimeSpan)(dt2 - dt1)).Days;
+                    //MessageBox.Show("Welcome.You have " + dataDiff + " days to expire the software");
                     // string username = dt.Rows[0][5].ToString();
                     frm_home db = new frm_home();
                     this.Hide();
@@ -84,11 +84,11 @@ namespace embul_thiyal
 
             if (dt.Rows.Count > 0)
             {
-                DateTime dt1 = DateTime.Now;
-                DateTime dt2 = DateTime.Parse("01/01/2024");
+                //DateTime dt1 = DateTime.Now;
+                //DateTime dt2 = DateTime.Parse("01/01/2024");
 
-                int dataDiff = ((TimeSpan)(dt2 - dt1)).Days;
-                MessageBox.Show("Welcome.You have " + dataDiff + " days to expire the software");
+                //int dataDiff = ((TimeSpan)(dt2 - dt1)).Days;
+                //MessageBox.Show("Welcome.You have " + dataDiff + " days to expire the software");
                 string username = dt.Rows[0][5].ToString();
                 frm_home db = new frm_home();
                 this.Hide();
