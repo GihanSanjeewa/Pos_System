@@ -288,6 +288,8 @@
             this.dgv_item.RowTemplate.Height = 24;
             this.dgv_item.Size = new System.Drawing.Size(790, 545);
             this.dgv_item.TabIndex = 13;
+            this.dgv_item.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_item_CellClick);
+            this.dgv_item.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_item_CellContentClick);
             // 
             // frm_editItem
             // 
