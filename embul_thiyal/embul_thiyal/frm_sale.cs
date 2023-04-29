@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -111,23 +112,10 @@ namespace embul_thiyal
 
             MySqlDataReader reader1 = cmd1.ExecuteReader();
 
-
-            
-
             if (reader1.Read())
             {
-                
-                
-
-                   
-
-
                     txt_uPrice.Text = reader1["item_price"].ToString();
                     txt_iName.Text = reader1["item_name"].ToString();
-
-                
-
-
 
             }
 
@@ -201,6 +189,7 @@ namespace embul_thiyal
             if (lbl_item1.Text == "")
             {
                 process1();
+                btn_remove1.Visible = true;
                
 
 
@@ -208,7 +197,8 @@ namespace embul_thiyal
             else if (lbl_item2.Text == "")
             {
                 process2();
-               
+                btn_remove2.Visible = true;
+
 
 
             }
@@ -216,7 +206,8 @@ namespace embul_thiyal
             else if (lbl_item3.Text == "")
             {
                 process3();
-             
+                btn_remove3.Visible = true;
+
 
 
             }
@@ -224,12 +215,14 @@ namespace embul_thiyal
             else if (lbl_item4.Text == "")
             {
                 process4();
-              
+                btn_remove4.Visible = true;
+
             }
             else
             {
                 process5();
-             
+                btn_remove5.Visible = true;
+
 
             }
 
@@ -285,6 +278,7 @@ namespace embul_thiyal
         private void btn_remove5_Click(object sender, EventArgs e)
         {
             clear5();
+
 
             lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) + Convert.ToInt32(lbl_tot2.Text) + Convert.ToInt32(lbl_tot3.Text) + Convert.ToInt32(lbl_tot4.Text)).ToString();
 
@@ -495,6 +489,95 @@ namespace embul_thiyal
                 lbl_total.Text = "0";
 
             }
+        }
+
+        private void btn_process_Click(object sender, EventArgs e)
+
+        {
+            if(cb_loyaltyPoints.Checked )
+            {
+                lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) - Convert.ToInt32(txt_discount.Text)).ToString();
+            }
+            saveData();
+        }
+        private void printBill()
+        {
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.ShowDialog();
+
+        }
+        private void saveData()
+        {
+            cls_connection.open_connection();
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO `bill`( `total_price`, `mobile_number`) VALUES (@total_price,@mobile_number)", cls_connection.con);
+            cmd.Parameters.Clear();
+
+
+            cmd.Parameters.AddWithValue("@total_price", lbl_total.Text);
+            cmd.Parameters.AddWithValue("@mobile_number", txt_mobileNumber.Text);
+      
+
+
+            cmd.ExecuteNonQuery();
+            cls_connection.close_connection();
+            MessageBox.Show("Order Added Successfully!");
+
+            //fndataLoad();
+            printBill();
+        }
+
+        private void printPreviewDialog1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Embul thiyal restaurent", new System.Drawing.Font("Arial", 26, FontStyle.Bold), Brushes.Black, new System.Drawing.Point(200, 50));
+
+            e.Graphics.DrawString("****************************************************************************************************************************************************************************************", new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(0, 370));
+
+            e.Graphics.DrawString("Invoice Number       -", new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(30, 310));
+            e.Graphics.DrawString("Customer        -", new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(450, 310));
+
+            e.Graphics.DrawString("****************************************************************************************************************************************************************************************", new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(0, 370));
+
+            e.Graphics.DrawString("Item 1    -", new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(150, 460));
+            e.Graphics.DrawString("Item 2    -", new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(150, 490));
+            e.Graphics.DrawString("Item 3    -", new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(150, 520));
+            e.Graphics.DrawString("Item 4    -", new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(150, 550));
+            e.Graphics.DrawString("Item 5    -", new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(150, 580));
+
+            e.Graphics.DrawString("****************************************************************************************************************************************************************************************", new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(0, 640));
+            e.Graphics.DrawString("Total Amount      -", new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(500, 670));
+            e.Graphics.DrawString("****************************************************************************************************************************************************************************************", new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(0, 700));
+
+            //bill Values
+            //e.Graphics.DrawString(lbl_invoiceNumber.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(250, 310));
+            //e.Graphics.DrawString(lbl_cusName.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(600, 310));
+
+            e.Graphics.DrawString(lbl_item1.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(250, 460));
+            e.Graphics.DrawString(lbl_qty1.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(500, 460));
+            e.Graphics.DrawString(lbl_tot1.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(650, 460));
+
+            e.Graphics.DrawString(lbl_item2.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(250, 490));
+            e.Graphics.DrawString(lbl_qty2.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(500, 490));
+            e.Graphics.DrawString(lbl_tot2.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(650, 490));
+
+            e.Graphics.DrawString(lbl_item3.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(250, 520));
+            e.Graphics.DrawString(lbl_qty3.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(500, 520));
+            e.Graphics.DrawString(lbl_tot3.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(650, 520));
+
+            e.Graphics.DrawString(lbl_item4.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(250, 550));
+            e.Graphics.DrawString(lbl_qty4.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(500, 550));
+            e.Graphics.DrawString(lbl_tot4.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(650, 550));
+
+            e.Graphics.DrawString(lbl_item5.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(350, 580));
+            e.Graphics.DrawString(lbl_qty5.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(500, 580));
+            e.Graphics.DrawString(lbl_tot5.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(650, 580));
+
+
+            e.Graphics.DrawString("Rs - " + lbl_total.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(650, 670));
         }
     }
 }
