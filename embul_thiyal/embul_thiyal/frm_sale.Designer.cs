@@ -30,12 +30,16 @@ namespace embul_thiyal
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_sale));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbl_item1 = new System.Windows.Forms.Label();
             this.lbl_qty1 = new System.Windows.Forms.Label();
             this.lbl_unitPrice1 = new System.Windows.Forms.Label();
             this.lbl_tot1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.btn_process = new Guna.UI2.WinForms.Guna2Button();
             this.btn_remove5 = new System.Windows.Forms.Button();
             this.btn_remove4 = new System.Windows.Forms.Button();
@@ -90,10 +94,11 @@ namespace embul_thiyal
             this.btn_Noodless = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.dgv_item1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_item)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_item1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_item1
@@ -185,6 +190,16 @@ namespace embul_thiyal
             this.panel1.Size = new System.Drawing.Size(469, 1055);
             this.panel1.TabIndex = 10;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(149, 853);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(111, 25);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Total : Rs.";
             // 
             // btn_process
             // 
@@ -857,6 +872,7 @@ namespace embul_thiyal
             this.groupBox1.AutoSize = true;
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBox1.Controls.Add(this.dgv_item1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.btn_shotees);
             this.groupBox1.Controls.Add(this.btn_Noodless);
@@ -894,6 +910,7 @@ namespace embul_thiyal
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Item Details";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label2
             // 
@@ -906,15 +923,57 @@ namespace embul_thiyal
             this.label2.TabIndex = 18;
             this.label2.Text = "Item Category";
             // 
-            // label4
+            // dgv_item1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(149, 853);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 25);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Total : Rs.";
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgv_item1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_item1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_item1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_item1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_item1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_item1.Location = new System.Drawing.Point(27, 28);
+            this.dgv_item1.Name = "dgv_item1";
+            this.dgv_item1.RowHeadersVisible = false;
+            this.dgv_item1.RowHeadersWidth = 51;
+            this.dgv_item1.RowTemplate.Height = 24;
+            this.dgv_item1.Size = new System.Drawing.Size(813, 554);
+            this.dgv_item1.TabIndex = 19;
+            this.dgv_item1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_item1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgv_item1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgv_item1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgv_item1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgv_item1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_item1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_item1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgv_item1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_item1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_item1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgv_item1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_item1.ThemeStyle.HeaderStyle.Height = 4;
+            this.dgv_item1.ThemeStyle.ReadOnly = false;
+            this.dgv_item1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_item1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_item1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_item1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_item1.ThemeStyle.RowsStyle.Height = 24;
+            this.dgv_item1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_item1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_item1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_item1_CellClick_1);
             // 
             // frm_sale
             // 
@@ -937,6 +996,7 @@ namespace embul_thiyal
             ((System.ComponentModel.ISupportInitialize)(this.dgv_item)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_item1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1004,5 +1064,6 @@ namespace embul_thiyal
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2DataGridView dgv_item1;
     }
 }
