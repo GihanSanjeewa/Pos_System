@@ -587,7 +587,17 @@ namespace embul_thiyal
 
         private void btn_bayit_Click(object sender, EventArgs e)
         {
+            MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Bites'", cls_connection.con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "item");
+            dgv_item.DataSource = ds.Tables["item"].DefaultView;
 
+            dgv_item.Columns[0].Name = "Item ID";
+            dgv_item.Columns[1].Name = "Iem Name";
+            dgv_item.Columns[2].Name = "Item Price";
+            dgv_item.Columns[0].Name = "Item Category";
+
+            cls_connection.close_connection();
         }
 
         private void btn_riceandcurry_Click(object sender, EventArgs e)
@@ -617,6 +627,171 @@ namespace embul_thiyal
                
 
             }
+        }
+
+        private void btn_friedRice_Click(object sender, EventArgs e)
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Fried Rice'", cls_connection.con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "item");
+            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+
+            dgv_item.Columns[0].Name = "Item ID";
+            dgv_item.Columns[1].Name = "Iem Name";
+            dgv_item.Columns[2].Name = "Item Price";
+            dgv_item.Columns[0].Name = "Item Category";
+
+            cls_connection.close_connection();
+        }
+
+        private void btn_chopsyRice_Click(object sender, EventArgs e)
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Chopsy Rice'", cls_connection.con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "item");
+            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+
+            dgv_item.Columns[0].Name = "Item ID";
+            dgv_item.Columns[1].Name = "Iem Name";
+            dgv_item.Columns[2].Name = "Item Price";
+            dgv_item.Columns[0].Name = "Item Category";
+
+            cls_connection.close_connection();
+        }
+
+        private void btn_dewal_Click(object sender, EventArgs e)
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Devilled'", cls_connection.con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "item");
+            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+
+            dgv_item.Columns[0].Name = "Item ID";
+            dgv_item.Columns[1].Name = "Iem Name";
+            dgv_item.Columns[2].Name = "Item Price";
+            dgv_item.Columns[0].Name = "Item Category";
+
+            cls_connection.close_connection();
+        }
+
+        private void btn_kottu_Click(object sender, EventArgs e)
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Kottu'", cls_connection.con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "item");
+            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+
+            dgv_item.Columns[0].Name = "Item ID";
+            dgv_item.Columns[1].Name = "Iem Name";
+            dgv_item.Columns[2].Name = "Item Price";
+            dgv_item.Columns[0].Name = "Item Category";
+
+            cls_connection.close_connection();
+        }
+
+        private void btn_Noodless_Click(object sender, EventArgs e)
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Noodles'", cls_connection.con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "item");
+            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+
+            dgv_item.Columns[0].Name = "Item ID";
+            dgv_item.Columns[1].Name = "Iem Name";
+            dgv_item.Columns[2].Name = "Item Price";
+            dgv_item.Columns[0].Name = "Item Category";
+
+            cls_connection.close_connection();
+        }
+
+        private void btn_shotees_Click(object sender, EventArgs e)
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Shorteats'", cls_connection.con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "item");
+            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+
+            dgv_item.Columns[0].Name = "Item ID";
+            dgv_item.Columns[1].Name = "Iem Name";
+            dgv_item.Columns[2].Name = "Item Price";
+            dgv_item.Columns[0].Name = "Item Category";
+
+            cls_connection.close_connection();
+        }
+
+        private void btn_Fried_Click(object sender, EventArgs e)
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Fried'", cls_connection.con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "item");
+            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+
+            dgv_item.Columns[0].Name = "Item ID";
+            dgv_item.Columns[1].Name = "Iem Name";
+            dgv_item.Columns[2].Name = "Item Price";
+            dgv_item.Columns[0].Name = "Item Category";
+
+            cls_connection.close_connection();
+        }
+
+        private void btn_juice_Click(object sender, EventArgs e)
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Juice'", cls_connection.con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "item");
+            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+
+            dgv_item.Columns[0].Name = "Item ID";
+            dgv_item.Columns[1].Name = "Iem Name";
+            dgv_item.Columns[2].Name = "Item Price";
+            dgv_item.Columns[0].Name = "Item Category";
+
+            cls_connection.close_connection();
+        }
+
+        private void btn_sup_Click(object sender, EventArgs e)
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Soups'", cls_connection.con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "item");
+            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+
+            dgv_item.Columns[0].Name = "Item ID";
+            dgv_item.Columns[1].Name = "Iem Name";
+            dgv_item.Columns[2].Name = "Item Price";
+            dgv_item.Columns[0].Name = "Item Category";
+
+            cls_connection.close_connection();
+        }
+
+        private void btn_stoo_Click(object sender, EventArgs e)
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Stew'", cls_connection.con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "item");
+            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+
+            dgv_item.Columns[0].Name = "Item ID";
+            dgv_item.Columns[1].Name = "Iem Name";
+            dgv_item.Columns[2].Name = "Item Price";
+            dgv_item.Columns[0].Name = "Item Category";
+
+            cls_connection.close_connection();
+        }
+
+        private void btn_rost_Click(object sender, EventArgs e)
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Roast'", cls_connection.con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "item");
+            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+
+            dgv_item.Columns[0].Name = "Item ID";
+            dgv_item.Columns[1].Name = "Iem Name";
+            dgv_item.Columns[2].Name = "Item Price";
+            dgv_item.Columns[0].Name = "Item Category";
+
+            cls_connection.close_connection();
         }
     }
 }

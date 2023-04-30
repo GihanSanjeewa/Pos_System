@@ -101,17 +101,17 @@
             this.cmb_category.Items.AddRange(new object[] {
             "Rice And Curry",
             "Fried Rice",
-            "Chopsi Rice",
-            "Dewal",
+            "Chopsy Rice",
+            "Devilled",
             "Kottu",
-            "Noodless",
-            "Shotees",
+            "Noodles",
+            "Shorteats",
             "Fried",
             "Juice",
-            "Sup",
-            "Stoo",
-            "Rost",
-            "Bayit"});
+            "Soups",
+            "Stew",
+            "Roast",
+            "Bites"});
             this.cmb_category.Location = new System.Drawing.Point(158, 337);
             this.cmb_category.Name = "cmb_category";
             this.cmb_category.Size = new System.Drawing.Size(326, 36);

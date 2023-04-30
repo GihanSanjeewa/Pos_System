@@ -754,6 +754,7 @@ namespace embul_thiyal
             this.btn_friedRice.Size = new System.Drawing.Size(93, 67);
             this.btn_friedRice.TabIndex = 17;
             this.btn_friedRice.Text = "Fried Rice";
+            this.btn_friedRice.Click += new System.EventHandler(this.btn_friedRice_Click);
             // 
             // btn_chopsyRice
             // 
@@ -768,6 +769,7 @@ namespace embul_thiyal
             this.btn_chopsyRice.Size = new System.Drawing.Size(93, 67);
             this.btn_chopsyRice.TabIndex = 17;
             this.btn_chopsyRice.Text = "Chopsy Rice";
+            this.btn_chopsyRice.Click += new System.EventHandler(this.btn_chopsyRice_Click);
             // 
             // btn_dewal
             // 
@@ -781,7 +783,8 @@ namespace embul_thiyal
             this.btn_dewal.Name = "btn_dewal";
             this.btn_dewal.Size = new System.Drawing.Size(93, 67);
             this.btn_dewal.TabIndex = 17;
-            this.btn_dewal.Text = "Dewal";
+            this.btn_dewal.Text = "Devilled";
+            this.btn_dewal.Click += new System.EventHandler(this.btn_dewal_Click);
             // 
             // btn_kottu
             // 
@@ -796,6 +799,7 @@ namespace embul_thiyal
             this.btn_kottu.Size = new System.Drawing.Size(93, 67);
             this.btn_kottu.TabIndex = 17;
             this.btn_kottu.Text = "Kottu";
+            this.btn_kottu.Click += new System.EventHandler(this.btn_kottu_Click);
             // 
             // btn_Noodless
             // 
@@ -809,7 +813,8 @@ namespace embul_thiyal
             this.btn_Noodless.Name = "btn_Noodless";
             this.btn_Noodless.Size = new System.Drawing.Size(93, 67);
             this.btn_Noodless.TabIndex = 17;
-            this.btn_Noodless.Text = "Noodless";
+            this.btn_Noodless.Text = "Noodles";
+            this.btn_Noodless.Click += new System.EventHandler(this.btn_Noodless_Click);
             // 
             // btn_shotees
             // 
@@ -823,7 +828,8 @@ namespace embul_thiyal
             this.btn_shotees.Name = "btn_shotees";
             this.btn_shotees.Size = new System.Drawing.Size(93, 67);
             this.btn_shotees.TabIndex = 17;
-            this.btn_shotees.Text = "Shotees";
+            this.btn_shotees.Text = "Shorteats";
+            this.btn_shotees.Click += new System.EventHandler(this.btn_shotees_Click);
             // 
             // btn_Fried
             // 
@@ -838,6 +844,7 @@ namespace embul_thiyal
             this.btn_Fried.Size = new System.Drawing.Size(93, 67);
             this.btn_Fried.TabIndex = 17;
             this.btn_Fried.Text = "Fried";
+            this.btn_Fried.Click += new System.EventHandler(this.btn_Fried_Click);
             // 
             // btn_juice
             // 
@@ -852,6 +859,7 @@ namespace embul_thiyal
             this.btn_juice.Size = new System.Drawing.Size(93, 67);
             this.btn_juice.TabIndex = 17;
             this.btn_juice.Text = "Juice";
+            this.btn_juice.Click += new System.EventHandler(this.btn_juice_Click);
             // 
             // btn_sup
             // 
@@ -865,7 +873,8 @@ namespace embul_thiyal
             this.btn_sup.Name = "btn_sup";
             this.btn_sup.Size = new System.Drawing.Size(93, 67);
             this.btn_sup.TabIndex = 17;
-            this.btn_sup.Text = "Sup";
+            this.btn_sup.Text = "Soups";
+            this.btn_sup.Click += new System.EventHandler(this.btn_sup_Click);
             // 
             // btn_stoo
             // 
@@ -879,7 +888,8 @@ namespace embul_thiyal
             this.btn_stoo.Name = "btn_stoo";
             this.btn_stoo.Size = new System.Drawing.Size(93, 67);
             this.btn_stoo.TabIndex = 17;
-            this.btn_stoo.Text = "Stoo";
+            this.btn_stoo.Text = "Stew";
+            this.btn_stoo.Click += new System.EventHandler(this.btn_stoo_Click);
             // 
             // btn_rost
             // 
@@ -893,7 +903,8 @@ namespace embul_thiyal
             this.btn_rost.Name = "btn_rost";
             this.btn_rost.Size = new System.Drawing.Size(93, 67);
             this.btn_rost.TabIndex = 17;
-            this.btn_rost.Text = "Rost";
+            this.btn_rost.Text = "Roast";
+            this.btn_rost.Click += new System.EventHandler(this.btn_rost_Click);
             // 
             // btn_bayit
             // 
@@ -907,7 +918,7 @@ namespace embul_thiyal
             this.btn_bayit.Name = "btn_bayit";
             this.btn_bayit.Size = new System.Drawing.Size(93, 67);
             this.btn_bayit.TabIndex = 17;
-            this.btn_bayit.Text = "Bayit";
+            this.btn_bayit.Text = "Bites";
             this.btn_bayit.Click += new System.EventHandler(this.btn_bayit_Click);
             // 
             // frm_sale
