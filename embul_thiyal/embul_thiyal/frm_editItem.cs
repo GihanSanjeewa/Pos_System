@@ -80,7 +80,7 @@ namespace embul_thiyal
         {
             cls_connection.open_connection();
 
-            string MysqlQry = "delete from item where item_id =(" + txt_searchName.Text + ")";
+            string MysqlQry = "delete from item where item_id =(" + txt_itemCode.Text + ")";
 
             MySqlCommand cmd = new MySqlCommand(MysqlQry, cls_connection.con);
 
@@ -99,6 +99,24 @@ namespace embul_thiyal
             frm_home home = new frm_home();
             this.Hide();
             home.Show();
+        }
+
+        private void dgv_item_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+        }
+
+        private void dgv_item_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex != -1) 
+            {
+                DataGridViewRow dgvrow = dgv_item.Rows[e.RowIndex];
+                txt_itemCode.Text = dgvrow.Cells[0].Value.ToString();
+                txt_itemName.Text = dgvrow.Cells[1].Value.ToString();
+                cmb_category.Text = dgvrow.Cells[3].Value.ToString();
+                txt_unitPrice.Text = dgvrow.Cells[2].Value.ToString();
+
+            }
         }
     }
 }
