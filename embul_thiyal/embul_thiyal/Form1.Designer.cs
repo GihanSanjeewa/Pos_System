@@ -29,6 +29,7 @@ namespace embul_thiyal
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_home));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,6 +44,9 @@ namespace embul_thiyal
             this.btn_item = new Guna.UI2.WinForms.Guna2Button();
             this.btn_customer = new Guna.UI2.WinForms.Guna2Button();
             this.btn_sale = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_time = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbl_date = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,6 +113,8 @@ namespace embul_thiyal
             // 
             this.guna2Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel1.BackgroundImage")));
             this.guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Panel1.Controls.Add(this.lbl_date);
+            this.guna2Panel1.Controls.Add(this.lbl_time);
             this.guna2Panel1.Controls.Add(this.label6);
             this.guna2Panel1.Controls.Add(this.btn_logout);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -244,6 +250,36 @@ namespace embul_thiyal
             this.btn_sale.TabIndex = 0;
             this.btn_sale.Click += new System.EventHandler(this.btn_sale_Click);
             // 
+            // lbl_time
+            // 
+            this.lbl_time.AutoSize = true;
+            this.lbl_time.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_time.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl_time.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_time.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lbl_time.Location = new System.Drawing.Point(1373, 13);
+            this.lbl_time.Name = "lbl_time";
+            this.lbl_time.Size = new System.Drawing.Size(80, 32);
+            this.lbl_time.TabIndex = 4;
+            this.lbl_time.Text = "Time ";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lbl_date
+            // 
+            this.lbl_date.AutoSize = true;
+            this.lbl_date.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_date.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbl_date.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_date.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lbl_date.Location = new System.Drawing.Point(1373, 69);
+            this.lbl_date.Name = "lbl_date";
+            this.lbl_date.Size = new System.Drawing.Size(76, 32);
+            this.lbl_date.TabIndex = 4;
+            this.lbl_date.Text = "Date ";
+            // 
             // frm_home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -266,6 +302,7 @@ namespace embul_thiyal
             this.Name = "frm_home";
             this.Text = "Home";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frm_home_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -288,6 +325,9 @@ namespace embul_thiyal
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Button btn_logout;
+        private System.Windows.Forms.Label lbl_time;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbl_date;
     }
 }
 

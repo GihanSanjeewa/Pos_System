@@ -580,6 +580,11 @@ namespace embul_thiyal
             e.Graphics.DrawString("Rs - " + lbl_total.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(650, 670));
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void btn_bayit_Click(object sender, EventArgs e)
         {
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Bites'", cls_connection.con);
@@ -601,6 +606,7 @@ namespace embul_thiyal
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
             dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            
 
             dgv_item.Columns[0].Name = "Item ID";
             dgv_item.Columns[1].Name = "Iem Name";
@@ -780,6 +786,7 @@ namespace embul_thiyal
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
             dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            
 
             dgv_item.Columns[0].Name = "Item ID";
             dgv_item.Columns[1].Name = "Iem Name";
@@ -789,9 +796,9 @@ namespace embul_thiyal
             cls_connection.close_connection();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void dgv_item1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
         }
     }
 }

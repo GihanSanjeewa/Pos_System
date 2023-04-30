@@ -103,7 +103,7 @@ namespace embul_thiyal
             this.lbl_item1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_item1.Location = new System.Drawing.Point(41, 135);
             this.lbl_item1.Name = "lbl_item1";
-            this.lbl_item1.Size = new System.Drawing.Size(0, 17);
+            this.lbl_item1.Size = new System.Drawing.Size(0, 16);
             this.lbl_item1.TabIndex = 10;
             // 
             // lbl_qty1
@@ -113,7 +113,7 @@ namespace embul_thiyal
             this.lbl_qty1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_qty1.Location = new System.Drawing.Point(256, 135);
             this.lbl_qty1.Name = "lbl_qty1";
-            this.lbl_qty1.Size = new System.Drawing.Size(0, 17);
+            this.lbl_qty1.Size = new System.Drawing.Size(0, 16);
             this.lbl_qty1.TabIndex = 10;
             // 
             // lbl_unitPrice1
@@ -123,7 +123,7 @@ namespace embul_thiyal
             this.lbl_unitPrice1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_unitPrice1.Location = new System.Drawing.Point(145, 135);
             this.lbl_unitPrice1.Name = "lbl_unitPrice1";
-            this.lbl_unitPrice1.Size = new System.Drawing.Size(0, 17);
+            this.lbl_unitPrice1.Size = new System.Drawing.Size(0, 16);
             this.lbl_unitPrice1.TabIndex = 10;
             // 
             // lbl_tot1
@@ -133,7 +133,7 @@ namespace embul_thiyal
             this.lbl_tot1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_tot1.Location = new System.Drawing.Point(351, 135);
             this.lbl_tot1.Name = "lbl_tot1";
-            this.lbl_tot1.Size = new System.Drawing.Size(0, 17);
+            this.lbl_tot1.Size = new System.Drawing.Size(0, 16);
             this.lbl_tot1.TabIndex = 10;
             // 
             // label8
@@ -285,7 +285,7 @@ namespace embul_thiyal
             this.lbl_tot5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_tot5.Location = new System.Drawing.Point(351, 292);
             this.lbl_tot5.Name = "lbl_tot5";
-            this.lbl_tot5.Size = new System.Drawing.Size(0, 17);
+            this.lbl_tot5.Size = new System.Drawing.Size(0, 16);
             this.lbl_tot5.TabIndex = 10;
             // 
             // lbl_tot4
@@ -295,7 +295,7 @@ namespace embul_thiyal
             this.lbl_tot4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_tot4.Location = new System.Drawing.Point(351, 251);
             this.lbl_tot4.Name = "lbl_tot4";
-            this.lbl_tot4.Size = new System.Drawing.Size(0, 17);
+            this.lbl_tot4.Size = new System.Drawing.Size(0, 16);
             this.lbl_tot4.TabIndex = 10;
             // 
             // lbl_tot3
@@ -305,7 +305,7 @@ namespace embul_thiyal
             this.lbl_tot3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_tot3.Location = new System.Drawing.Point(351, 212);
             this.lbl_tot3.Name = "lbl_tot3";
-            this.lbl_tot3.Size = new System.Drawing.Size(0, 17);
+            this.lbl_tot3.Size = new System.Drawing.Size(0, 16);
             this.lbl_tot3.TabIndex = 10;
             // 
             // lbl_tot2
@@ -315,7 +315,7 @@ namespace embul_thiyal
             this.lbl_tot2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_tot2.Location = new System.Drawing.Point(351, 171);
             this.lbl_tot2.Name = "lbl_tot2";
-            this.lbl_tot2.Size = new System.Drawing.Size(0, 17);
+            this.lbl_tot2.Size = new System.Drawing.Size(0, 16);
             this.lbl_tot2.TabIndex = 10;
             // 
             // lbl_unitPrice5
@@ -325,7 +325,7 @@ namespace embul_thiyal
             this.lbl_unitPrice5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_unitPrice5.Location = new System.Drawing.Point(145, 292);
             this.lbl_unitPrice5.Name = "lbl_unitPrice5";
-            this.lbl_unitPrice5.Size = new System.Drawing.Size(0, 17);
+            this.lbl_unitPrice5.Size = new System.Drawing.Size(0, 16);
             this.lbl_unitPrice5.TabIndex = 10;
             // 
             // lbl_unitPrice4
@@ -335,7 +335,7 @@ namespace embul_thiyal
             this.lbl_unitPrice4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_unitPrice4.Location = new System.Drawing.Point(145, 251);
             this.lbl_unitPrice4.Name = "lbl_unitPrice4";
-            this.lbl_unitPrice4.Size = new System.Drawing.Size(0, 17);
+            this.lbl_unitPrice4.Size = new System.Drawing.Size(0, 16);
             this.lbl_unitPrice4.TabIndex = 10;
             // 
             // lbl_unitPrice3
@@ -345,7 +345,7 @@ namespace embul_thiyal
             this.lbl_unitPrice3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_unitPrice3.Location = new System.Drawing.Point(145, 212);
             this.lbl_unitPrice3.Name = "lbl_unitPrice3";
-            this.lbl_unitPrice3.Size = new System.Drawing.Size(0, 17);
+            this.lbl_unitPrice3.Size = new System.Drawing.Size(0, 16);
             this.lbl_unitPrice3.TabIndex = 10;
             // 
             // lbl_unitPrice2
@@ -355,7 +355,7 @@ namespace embul_thiyal
             this.lbl_unitPrice2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_unitPrice2.Location = new System.Drawing.Point(145, 171);
             this.lbl_unitPrice2.Name = "lbl_unitPrice2";
-            this.lbl_unitPrice2.Size = new System.Drawing.Size(0, 17);
+            this.lbl_unitPrice2.Size = new System.Drawing.Size(0, 16);
             this.lbl_unitPrice2.TabIndex = 10;
             // 
             // lbl_qty5
@@ -365,7 +365,7 @@ namespace embul_thiyal
             this.lbl_qty5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_qty5.Location = new System.Drawing.Point(256, 292);
             this.lbl_qty5.Name = "lbl_qty5";
-            this.lbl_qty5.Size = new System.Drawing.Size(0, 17);
+            this.lbl_qty5.Size = new System.Drawing.Size(0, 16);
             this.lbl_qty5.TabIndex = 10;
             // 
             // lbl_qty4
@@ -375,7 +375,7 @@ namespace embul_thiyal
             this.lbl_qty4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_qty4.Location = new System.Drawing.Point(256, 251);
             this.lbl_qty4.Name = "lbl_qty4";
-            this.lbl_qty4.Size = new System.Drawing.Size(0, 17);
+            this.lbl_qty4.Size = new System.Drawing.Size(0, 16);
             this.lbl_qty4.TabIndex = 10;
             // 
             // lbl_qty3
@@ -385,7 +385,7 @@ namespace embul_thiyal
             this.lbl_qty3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_qty3.Location = new System.Drawing.Point(256, 212);
             this.lbl_qty3.Name = "lbl_qty3";
-            this.lbl_qty3.Size = new System.Drawing.Size(0, 17);
+            this.lbl_qty3.Size = new System.Drawing.Size(0, 16);
             this.lbl_qty3.TabIndex = 10;
             // 
             // lbl_qty2
@@ -395,7 +395,7 @@ namespace embul_thiyal
             this.lbl_qty2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_qty2.Location = new System.Drawing.Point(256, 171);
             this.lbl_qty2.Name = "lbl_qty2";
-            this.lbl_qty2.Size = new System.Drawing.Size(0, 17);
+            this.lbl_qty2.Size = new System.Drawing.Size(0, 16);
             this.lbl_qty2.TabIndex = 10;
             // 
             // lbl_item5
@@ -405,7 +405,7 @@ namespace embul_thiyal
             this.lbl_item5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_item5.Location = new System.Drawing.Point(41, 292);
             this.lbl_item5.Name = "lbl_item5";
-            this.lbl_item5.Size = new System.Drawing.Size(0, 17);
+            this.lbl_item5.Size = new System.Drawing.Size(0, 16);
             this.lbl_item5.TabIndex = 10;
             // 
             // lbl_item4
@@ -415,7 +415,7 @@ namespace embul_thiyal
             this.lbl_item4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_item4.Location = new System.Drawing.Point(41, 251);
             this.lbl_item4.Name = "lbl_item4";
-            this.lbl_item4.Size = new System.Drawing.Size(0, 17);
+            this.lbl_item4.Size = new System.Drawing.Size(0, 16);
             this.lbl_item4.TabIndex = 10;
             // 
             // lbl_item3
@@ -425,7 +425,7 @@ namespace embul_thiyal
             this.lbl_item3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_item3.Location = new System.Drawing.Point(41, 212);
             this.lbl_item3.Name = "lbl_item3";
-            this.lbl_item3.Size = new System.Drawing.Size(0, 17);
+            this.lbl_item3.Size = new System.Drawing.Size(0, 16);
             this.lbl_item3.TabIndex = 10;
             // 
             // lbl_item2
@@ -435,7 +435,7 @@ namespace embul_thiyal
             this.lbl_item2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_item2.Location = new System.Drawing.Point(41, 171);
             this.lbl_item2.Name = "lbl_item2";
-            this.lbl_item2.Size = new System.Drawing.Size(0, 17);
+            this.lbl_item2.Size = new System.Drawing.Size(0, 16);
             this.lbl_item2.TabIndex = 10;
             // 
             // printPreviewDialog1
@@ -570,7 +570,7 @@ namespace embul_thiyal
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(31, 626);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 29);
+            this.label1.Size = new System.Drawing.Size(116, 28);
             this.label1.TabIndex = 10;
             this.label1.Text = "Item name";
             // 
@@ -579,7 +579,7 @@ namespace embul_thiyal
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(33, 690);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 29);
+            this.label3.Size = new System.Drawing.Size(106, 28);
             this.label3.TabIndex = 10;
             this.label3.Text = "Unit Price";
             // 
@@ -588,7 +588,7 @@ namespace embul_thiyal
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(513, 626);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 29);
+            this.label6.Size = new System.Drawing.Size(100, 28);
             this.label6.TabIndex = 10;
             this.label6.Text = "Quantitiy";
             // 
@@ -598,7 +598,7 @@ namespace embul_thiyal
             this.lbl_availblePoints.Enabled = false;
             this.lbl_availblePoints.Location = new System.Drawing.Point(506, 924);
             this.lbl_availblePoints.Name = "lbl_availblePoints";
-            this.lbl_availblePoints.Size = new System.Drawing.Size(173, 29);
+            this.lbl_availblePoints.Size = new System.Drawing.Size(164, 28);
             this.lbl_availblePoints.TabIndex = 10;
             this.lbl_availblePoints.Text = "Available points";
             // 
@@ -608,7 +608,7 @@ namespace embul_thiyal
             this.lbl_phoneNumber.Enabled = false;
             this.lbl_phoneNumber.Location = new System.Drawing.Point(30, 861);
             this.lbl_phoneNumber.Name = "lbl_phoneNumber";
-            this.lbl_phoneNumber.Size = new System.Drawing.Size(162, 29);
+            this.lbl_phoneNumber.Size = new System.Drawing.Size(152, 28);
             this.lbl_phoneNumber.TabIndex = 10;
             this.lbl_phoneNumber.Text = "Phone number";
             // 
@@ -622,7 +622,7 @@ namespace embul_thiyal
             this.cb_loyaltyPoints.Location = new System.Drawing.Point(511, 861);
             this.cb_loyaltyPoints.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_loyaltyPoints.Name = "cb_loyaltyPoints";
-            this.cb_loyaltyPoints.Size = new System.Drawing.Size(155, 33);
+            this.cb_loyaltyPoints.Size = new System.Drawing.Size(148, 32);
             this.cb_loyaltyPoints.TabIndex = 12;
             this.cb_loyaltyPoints.Text = "Loyal points";
             this.cb_loyaltyPoints.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -668,7 +668,7 @@ namespace embul_thiyal
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(31, 924);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 29);
+            this.label7.Size = new System.Drawing.Size(96, 28);
             this.label7.TabIndex = 16;
             this.label7.Text = "Discount";
             // 
