@@ -21,7 +21,7 @@ namespace embul_thiyal
         private void btn_search_Click(object sender, EventArgs e)
         {
             cls_connection.open_connection();
-            MySqlCommand cmd1 = new MySqlCommand("SELECT `item_id`,`item_name`,`item_price`,`quantity`,`category` FROM `item` WHERE item_id =@id", cls_connection.con);
+            MySqlCommand cmd1 = new MySqlCommand("SELECT `item_id`,`item_name`,`item_price`,`quantity`,`category` FROM `item` WHERE item_name =@id", cls_connection.con);
             cmd1.Parameters.AddWithValue("id", txt_searchName.Text);
 
             MySqlDataReader reader1;
@@ -54,7 +54,7 @@ namespace embul_thiyal
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item", cls_connection.con);
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
-            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            dgv_editItem.DataSource = ds.Tables["item"].DefaultView;
 
         }
 
@@ -110,7 +110,7 @@ namespace embul_thiyal
         {
             if(e.RowIndex != -1) 
             {
-                DataGridViewRow dgvrow = dgv_item.Rows[e.RowIndex];
+                DataGridViewRow dgvrow = dgv_editItem.Rows[e.RowIndex];
                 txt_itemCode.Text = dgvrow.Cells[0].Value.ToString();
                 txt_itemName.Text = dgvrow.Cells[1].Value.ToString();
                 cmb_category.Text = dgvrow.Cells[3].Value.ToString();
