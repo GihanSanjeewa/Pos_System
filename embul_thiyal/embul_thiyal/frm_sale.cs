@@ -606,6 +606,7 @@ namespace embul_thiyal
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
             dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            
 
             dgv_item.Columns[0].Name = "Item ID";
             dgv_item.Columns[1].Name = "Iem Name";
@@ -785,6 +786,7 @@ namespace embul_thiyal
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
             dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            
 
             dgv_item.Columns[0].Name = "Item ID";
             dgv_item.Columns[1].Name = "Iem Name";
@@ -792,6 +794,11 @@ namespace embul_thiyal
             dgv_item.Columns[0].Name = "Item Category";
 
             cls_connection.close_connection();
+        }
+
+        private void dgv_item1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }
