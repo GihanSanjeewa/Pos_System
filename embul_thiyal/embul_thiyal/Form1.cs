@@ -74,16 +74,5 @@ namespace embul_thiyal
             this.Hide();
             login.Show();   
         }
-
-        private void frm_home_Load(object sender, EventArgs e)
-        {
-            timer1.Start();
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            lbl_time.Text = DateTime.Now.ToLongTimeString();
-            lbl_date.Text = DateTime.Now.ToLongDateString();    
-        }
     }
 }

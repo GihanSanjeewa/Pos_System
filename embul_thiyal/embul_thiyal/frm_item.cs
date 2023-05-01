@@ -47,7 +47,7 @@ namespace embul_thiyal
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item", cls_connection.con);
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
-            dgv_item1.DataSource = ds.Tables["item"].DefaultView;
+            dgv_item.DataSource = ds.Tables["item"].DefaultView;
 
         }
 
@@ -85,11 +85,6 @@ namespace embul_thiyal
             frm_editItem editItem = new frm_editItem();
             this.Hide();
             editItem.Show();
-
-        }
-
-        private void frm_item_Load(object sender, EventArgs e)
-        {
 
         }
     }

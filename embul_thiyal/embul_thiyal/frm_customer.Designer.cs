@@ -34,17 +34,13 @@ namespace embul_thiyal
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.dgv_customer = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txt_mobile_number = new Guna.UI2.WinForms.Guna2TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_search_customer = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txt_starPoint = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txt_updatePoints = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_delete = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_customer)).BeginInit();
+            this.txt_mobile_number = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dgv_customer = new Guna.UI2.WinForms.Guna2DataGridView();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_customer)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -78,6 +74,66 @@ namespace embul_thiyal
             this.guna2Button5.Size = new System.Drawing.Size(72, 73);
             this.guna2Button5.TabIndex = 6;
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click_1);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btn_search_customer);
+            this.groupBox1.Controls.Add(this.guna2HtmlLabel1);
+            this.groupBox1.Controls.Add(this.txt_mobile_number);
+            this.groupBox1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(67, 74);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(589, 235);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Manage Customer";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // btn_search_customer
+            // 
+            this.btn_search_customer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_search_customer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_search_customer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_search_customer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_search_customer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_search_customer.ForeColor = System.Drawing.Color.White;
+            this.btn_search_customer.Location = new System.Drawing.Point(204, 155);
+            this.btn_search_customer.Name = "btn_search_customer";
+            this.btn_search_customer.Size = new System.Drawing.Size(180, 45);
+            this.btn_search_customer.TabIndex = 2;
+            this.btn_search_customer.Text = "Delete";
+            this.btn_search_customer.Click += new System.EventHandler(this.btn_search_customer_Click);
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(25, 92);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(194, 26);
+            this.guna2HtmlLabel1.TabIndex = 1;
+            this.guna2HtmlLabel1.Text = "Customer 4n Number :";
+            // 
+            // txt_mobile_number
+            // 
+            this.txt_mobile_number.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_mobile_number.DefaultText = "";
+            this.txt_mobile_number.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_mobile_number.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_mobile_number.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_mobile_number.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_mobile_number.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_mobile_number.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_mobile_number.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_mobile_number.Location = new System.Drawing.Point(276, 85);
+            this.txt_mobile_number.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_mobile_number.Name = "txt_mobile_number";
+            this.txt_mobile_number.PasswordChar = '\0';
+            this.txt_mobile_number.PlaceholderText = "";
+            this.txt_mobile_number.SelectedText = "";
+            this.txt_mobile_number.Size = new System.Drawing.Size(293, 36);
+            this.txt_mobile_number.TabIndex = 0;
+            this.txt_mobile_number.TextChanged += new System.EventHandler(this.txt_mobile_number_TextChanged);
             // 
             // dgv_customer
             // 
@@ -132,124 +188,6 @@ namespace embul_thiyal
             this.dgv_customer.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_customer.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // txt_mobile_number
-            // 
-            this.txt_mobile_number.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_mobile_number.DefaultText = "";
-            this.txt_mobile_number.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_mobile_number.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_mobile_number.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_mobile_number.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_mobile_number.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_mobile_number.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_mobile_number.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_mobile_number.Location = new System.Drawing.Point(276, 85);
-            this.txt_mobile_number.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_mobile_number.Name = "txt_mobile_number";
-            this.txt_mobile_number.PasswordChar = '\0';
-            this.txt_mobile_number.PlaceholderText = "";
-            this.txt_mobile_number.SelectedText = "";
-            this.txt_mobile_number.Size = new System.Drawing.Size(293, 36);
-            this.txt_mobile_number.TabIndex = 0;
-            this.txt_mobile_number.TextChanged += new System.EventHandler(this.txt_mobile_number_TextChanged);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btn_delete);
-            this.groupBox1.Controls.Add(this.guna2HtmlLabel3);
-            this.groupBox1.Controls.Add(this.guna2HtmlLabel2);
-            this.groupBox1.Controls.Add(this.txt_starPoint);
-            this.groupBox1.Controls.Add(this.txt_updatePoints);
-            this.groupBox1.Controls.Add(this.txt_mobile_number);
-            this.groupBox1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(47, 91);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(626, 529);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Manage Customer";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(25, 92);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(194, 26);
-            this.guna2HtmlLabel1.TabIndex = 1;
-            this.guna2HtmlLabel1.Text = "Customer 4n Number :";
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(6, 91);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(251, 30);
-            this.guna2HtmlLabel2.TabIndex = 3;
-            this.guna2HtmlLabel2.Text = "Customer Mobile \r\nNumber\r\n";
-            this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txt_starPoint
-            // 
-            this.txt_starPoint.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_starPoint.DefaultText = "";
-            this.txt_starPoint.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_starPoint.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_starPoint.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_starPoint.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_starPoint.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_starPoint.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_starPoint.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_starPoint.Location = new System.Drawing.Point(141, 281);
-            this.txt_starPoint.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_starPoint.Name = "txt_starPoint";
-            this.txt_starPoint.PasswordChar = '\0';
-            this.txt_starPoint.PlaceholderText = "";
-            this.txt_starPoint.SelectedText = "";
-            this.txt_starPoint.Size = new System.Drawing.Size(136, 36);
-            this.txt_starPoint.TabIndex = 0;
-            this.txt_starPoint.TextChanged += new System.EventHandler(this.txt_mobile_number_TextChanged);
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(6, 281);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(105, 30);
-            this.guna2HtmlLabel3.TabIndex = 4;
-            this.guna2HtmlLabel3.Text = "Star Points";
-            // 
-            // txt_updatePoints
-            // 
-            this.txt_updatePoints.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.txt_updatePoints.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.txt_updatePoints.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.txt_updatePoints.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.txt_updatePoints.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_updatePoints.ForeColor = System.Drawing.Color.White;
-            this.txt_updatePoints.Location = new System.Drawing.Point(194, 351);
-            this.txt_updatePoints.Name = "txt_updatePoints";
-            this.txt_updatePoints.Size = new System.Drawing.Size(180, 45);
-            this.txt_updatePoints.TabIndex = 2;
-            this.txt_updatePoints.Text = "Update Points";
-            this.txt_updatePoints.Click += new System.EventHandler(this.btn_search_customer_Click);
-            // 
-            // btn_delete
-            // 
-            this.btn_delete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_delete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_delete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_delete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_delete.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_delete.ForeColor = System.Drawing.Color.White;
-            this.btn_delete.Location = new System.Drawing.Point(276, 185);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(180, 45);
-            this.btn_delete.TabIndex = 5;
-            this.btn_delete.Text = "Delete";
-            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
-            // 
             // frm_customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -264,9 +202,9 @@ namespace embul_thiyal
             this.Name = "frm_customer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer";
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_customer)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_customer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,14 +214,10 @@ namespace embul_thiyal
 
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2DataGridView dgv_customer;
-        private Guna.UI2.WinForms.Guna2TextBox txt_mobile_number;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2TextBox txt_starPoint;
-        private Guna.UI2.WinForms.Guna2Button txt_updatePoints;
-        private Guna.UI2.WinForms.Guna2Button btn_delete;
+        private Guna.UI2.WinForms.Guna2TextBox txt_mobile_number;
+        private Guna.UI2.WinForms.Guna2Button btn_search_customer;
+        private Guna.UI2.WinForms.Guna2DataGridView dgv_customer;
     }
 }

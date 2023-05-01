@@ -30,16 +30,33 @@ namespace embul_thiyal
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_sale));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btn_add2Bill = new Guna.UI2.WinForms.Guna2Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dgv_item = new System.Windows.Forms.DataGridView();
+            this.txt_iName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_select = new Guna.UI2.WinForms.Guna2Button();
+            this.cb_loyaltyPoints = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.lbl_phoneNumber = new System.Windows.Forms.Label();
+            this.lbl_availblePoints = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_mobileNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_quantity = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_discount = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_uPrice = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_itemCode = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_search = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.lbl_item1 = new System.Windows.Forms.Label();
             this.lbl_qty1 = new System.Windows.Forms.Label();
             this.lbl_unitPrice1 = new System.Windows.Forms.Label();
             this.lbl_tot1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.btn_process = new Guna.UI2.WinForms.Guna2Button();
             this.btn_remove5 = new System.Windows.Forms.Button();
             this.btn_remove4 = new System.Windows.Forms.Button();
@@ -65,41 +82,341 @@ namespace embul_thiyal
             this.lbl_item2 = new System.Windows.Forms.Label();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.btn_shotees = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_add2Bill = new Guna.UI2.WinForms.Guna2Button();
-            this.txt_uPrice = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_discount = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_quantity = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_mobileNumber = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lbl_availblePoints = new System.Windows.Forms.Label();
-            this.lbl_phoneNumber = new System.Windows.Forms.Label();
-            this.cb_loyaltyPoints = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.txt_iName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dgv_item = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btn_riceandcurry = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Fried = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_juice = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_sup = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_stoo = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_rost = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_bayit = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_friedRice = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_chopsyRice = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_dewal = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_kottu = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Noodless = new Guna.UI2.WinForms.Guna2Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dgv_item1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_item)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_item1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_item)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(1721, 91);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 24);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Home";
+            // 
+            // btn_add2Bill
+            // 
+            this.btn_add2Bill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_add2Bill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_add2Bill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_add2Bill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_add2Bill.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_add2Bill.ForeColor = System.Drawing.Color.White;
+            this.btn_add2Bill.Location = new System.Drawing.Point(140, 549);
+            this.btn_add2Bill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_add2Bill.Name = "btn_add2Bill";
+            this.btn_add2Bill.Size = new System.Drawing.Size(180, 46);
+            this.btn_add2Bill.TabIndex = 8;
+            this.btn_add2Bill.Text = "Add item";
+            this.btn_add2Bill.Click += new System.EventHandler(this.btn_add2Bill_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.dgv_item);
+            this.groupBox1.Controls.Add(this.txt_iName);
+            this.groupBox1.Controls.Add(this.btn_select);
+            this.groupBox1.Controls.Add(this.cb_loyaltyPoints);
+            this.groupBox1.Controls.Add(this.lbl_phoneNumber);
+            this.groupBox1.Controls.Add(this.lbl_availblePoints);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.txt_mobileNumber);
+            this.groupBox1.Controls.Add(this.txt_quantity);
+            this.groupBox1.Controls.Add(this.txt_discount);
+            this.groupBox1.Controls.Add(this.txt_uPrice);
+            this.groupBox1.Controls.Add(this.txt_itemCode);
+            this.groupBox1.Controls.Add(this.txt_search);
+            this.groupBox1.Controls.Add(this.btn_add2Bill);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(635, 825);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Item Details";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(15, 777);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 16);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Discount";
+            // 
+            // dgv_item
+            // 
+            this.dgv_item.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_item.Location = new System.Drawing.Point(19, 148);
+            this.dgv_item.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgv_item.Name = "dgv_item";
+            this.dgv_item.RowHeadersWidth = 51;
+            this.dgv_item.RowTemplate.Height = 24;
+            this.dgv_item.Size = new System.Drawing.Size(597, 272);
+            this.dgv_item.TabIndex = 15;
+            // 
+            // txt_iName
+            // 
+            this.txt_iName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_iName.DefaultText = "";
+            this.txt_iName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_iName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_iName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_iName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_iName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_iName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_iName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_iName.Location = new System.Drawing.Point(140, 441);
+            this.txt_iName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_iName.Name = "txt_iName";
+            this.txt_iName.PasswordChar = '\0';
+            this.txt_iName.PlaceholderText = "";
+            this.txt_iName.SelectedText = "";
+            this.txt_iName.Size = new System.Drawing.Size(244, 32);
+            this.txt_iName.TabIndex = 14;
+            // 
+            // btn_select
+            // 
+            this.btn_select.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_select.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_select.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_select.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_select.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_select.ForeColor = System.Drawing.Color.White;
+            this.btn_select.Location = new System.Drawing.Point(412, 94);
+            this.btn_select.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_select.Name = "btn_select";
+            this.btn_select.Size = new System.Drawing.Size(129, 39);
+            this.btn_select.TabIndex = 13;
+            this.btn_select.Text = "Select";
+            this.btn_select.Click += new System.EventHandler(this.btn_select_Click);
+            // 
+            // cb_loyaltyPoints
+            // 
+            this.cb_loyaltyPoints.AutoSize = true;
+            this.cb_loyaltyPoints.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_loyaltyPoints.CheckedState.BorderRadius = 0;
+            this.cb_loyaltyPoints.CheckedState.BorderThickness = 0;
+            this.cb_loyaltyPoints.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cb_loyaltyPoints.Location = new System.Drawing.Point(124, 671);
+            this.cb_loyaltyPoints.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cb_loyaltyPoints.Name = "cb_loyaltyPoints";
+            this.cb_loyaltyPoints.Size = new System.Drawing.Size(101, 20);
+            this.cb_loyaltyPoints.TabIndex = 12;
+            this.cb_loyaltyPoints.Text = "Loyal points";
+            this.cb_loyaltyPoints.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cb_loyaltyPoints.UncheckedState.BorderRadius = 0;
+            this.cb_loyaltyPoints.UncheckedState.BorderThickness = 0;
+            this.cb_loyaltyPoints.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cb_loyaltyPoints.CheckedChanged += new System.EventHandler(this.cb_loyaltyPoints_CheckedChanged);
+            // 
+            // lbl_phoneNumber
+            // 
+            this.lbl_phoneNumber.AutoSize = true;
+            this.lbl_phoneNumber.Enabled = false;
+            this.lbl_phoneNumber.Location = new System.Drawing.Point(15, 727);
+            this.lbl_phoneNumber.Name = "lbl_phoneNumber";
+            this.lbl_phoneNumber.Size = new System.Drawing.Size(94, 16);
+            this.lbl_phoneNumber.TabIndex = 10;
+            this.lbl_phoneNumber.Text = "Phone number";
+            // 
+            // lbl_availblePoints
+            // 
+            this.lbl_availblePoints.AutoSize = true;
+            this.lbl_availblePoints.Enabled = false;
+            this.lbl_availblePoints.Location = new System.Drawing.Point(404, 729);
+            this.lbl_availblePoints.Name = "lbl_availblePoints";
+            this.lbl_availblePoints.Size = new System.Drawing.Size(103, 16);
+            this.lbl_availblePoints.TabIndex = 10;
+            this.lbl_availblePoints.Text = "Available points";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(49, 494);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 16);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Quantitiy";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(268, 494);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 16);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Unit Price";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(45, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 16);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Search";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(45, 449);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 16);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Item name";
+            // 
+            // txt_mobileNumber
+            // 
+            this.txt_mobileNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_mobileNumber.DefaultText = "";
+            this.txt_mobileNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_mobileNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_mobileNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_mobileNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_mobileNumber.Enabled = false;
+            this.txt_mobileNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_mobileNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_mobileNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_mobileNumber.Location = new System.Drawing.Point(140, 721);
+            this.txt_mobileNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_mobileNumber.Name = "txt_mobileNumber";
+            this.txt_mobileNumber.PasswordChar = '\0';
+            this.txt_mobileNumber.PlaceholderText = "";
+            this.txt_mobileNumber.SelectedText = "";
+            this.txt_mobileNumber.Size = new System.Drawing.Size(244, 32);
+            this.txt_mobileNumber.TabIndex = 9;
+            // 
+            // txt_quantity
+            // 
+            this.txt_quantity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_quantity.DefaultText = "";
+            this.txt_quantity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_quantity.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_quantity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_quantity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_quantity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_quantity.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_quantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_quantity.Location = new System.Drawing.Point(140, 486);
+            this.txt_quantity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_quantity.Name = "txt_quantity";
+            this.txt_quantity.PasswordChar = '\0';
+            this.txt_quantity.PlaceholderText = "";
+            this.txt_quantity.SelectedText = "";
+            this.txt_quantity.Size = new System.Drawing.Size(101, 32);
+            this.txt_quantity.TabIndex = 9;
+            // 
+            // txt_discount
+            // 
+            this.txt_discount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_discount.DefaultText = "";
+            this.txt_discount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_discount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_discount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_discount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_discount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_discount.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_discount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_discount.Location = new System.Drawing.Point(140, 761);
+            this.txt_discount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_discount.Name = "txt_discount";
+            this.txt_discount.PasswordChar = '\0';
+            this.txt_discount.PlaceholderText = "";
+            this.txt_discount.SelectedText = "";
+            this.txt_discount.Size = new System.Drawing.Size(124, 32);
+            this.txt_discount.TabIndex = 9;
+            // 
+            // txt_uPrice
+            // 
+            this.txt_uPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_uPrice.DefaultText = "";
+            this.txt_uPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_uPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_uPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_uPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_uPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_uPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_uPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_uPrice.Location = new System.Drawing.Point(363, 486);
+            this.txt_uPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_uPrice.Name = "txt_uPrice";
+            this.txt_uPrice.PasswordChar = '\0';
+            this.txt_uPrice.PlaceholderText = "";
+            this.txt_uPrice.SelectedText = "";
+            this.txt_uPrice.Size = new System.Drawing.Size(124, 32);
+            this.txt_uPrice.TabIndex = 9;
+            // 
+            // txt_itemCode
+            // 
+            this.txt_itemCode.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_itemCode.DefaultText = "";
+            this.txt_itemCode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_itemCode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_itemCode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_itemCode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_itemCode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_itemCode.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_itemCode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_itemCode.Location = new System.Drawing.Point(140, 96);
+            this.txt_itemCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_itemCode.Name = "txt_itemCode";
+            this.txt_itemCode.PasswordChar = '\0';
+            this.txt_itemCode.PlaceholderText = "";
+            this.txt_itemCode.SelectedText = "";
+            this.txt_itemCode.Size = new System.Drawing.Size(244, 32);
+            this.txt_itemCode.TabIndex = 9;
+            this.txt_itemCode.TextChanged += new System.EventHandler(this.txt_search_TextChanged);
+            // 
+            // txt_search
+            // 
+            this.txt_search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_search.DefaultText = "";
+            this.txt_search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_search.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_search.Location = new System.Drawing.Point(140, 31);
+            this.txt_search.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.PasswordChar = '\0';
+            this.txt_search.PlaceholderText = "";
+            this.txt_search.SelectedText = "";
+            this.txt_search.Size = new System.Drawing.Size(244, 32);
+            this.txt_search.TabIndex = 9;
+            this.txt_search.TextChanged += new System.EventHandler(this.txt_search_TextChanged);
+            // 
+            // guna2Button5
+            // 
+            this.guna2Button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button5.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.Image = global::embul_thiyal.Properties.Resources.house;
+            this.guna2Button5.ImageSize = new System.Drawing.Size(50, 50);
+            this.guna2Button5.Location = new System.Drawing.Point(1715, 14);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.Size = new System.Drawing.Size(72, 73);
+            this.guna2Button5.TabIndex = 6;
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click_1);
             // 
             // lbl_item1
             // 
@@ -153,8 +470,7 @@ namespace embul_thiyal
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Controls.Add(this.btn_process);
             this.panel1.Controls.Add(this.btn_remove5);
             this.panel1.Controls.Add(this.btn_remove4);
@@ -183,37 +499,24 @@ namespace embul_thiyal
             this.panel1.Controls.Add(this.lbl_item3);
             this.panel1.Controls.Add(this.lbl_item2);
             this.panel1.Controls.Add(this.lbl_item1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(1455, 0);
+            this.panel1.Location = new System.Drawing.Point(967, 26);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(469, 1055);
+            this.panel1.Size = new System.Drawing.Size(501, 811);
             this.panel1.TabIndex = 10;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(149, 853);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 25);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Total : Rs.";
-            // 
             // btn_process
             // 
-            this.btn_process.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btn_process.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_process.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_process.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_process.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_process.FillColor = System.Drawing.Color.Green;
-            this.btn_process.Font = new System.Drawing.Font("Cascadia Mono", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_process.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_process.ForeColor = System.Drawing.Color.White;
-            this.btn_process.Location = new System.Drawing.Point(29, 894);
+            this.btn_process.Location = new System.Drawing.Point(295, 524);
             this.btn_process.Name = "btn_process";
-            this.btn_process.Size = new System.Drawing.Size(429, 67);
+            this.btn_process.Size = new System.Drawing.Size(180, 45);
             this.btn_process.TabIndex = 12;
             this.btn_process.Text = "Process";
             this.btn_process.Click += new System.EventHandler(this.btn_process_Click);
@@ -221,7 +524,7 @@ namespace embul_thiyal
             // btn_remove5
             // 
             this.btn_remove5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_remove5.Location = new System.Drawing.Point(415, 289);
+            this.btn_remove5.Location = new System.Drawing.Point(415, 283);
             this.btn_remove5.Margin = new System.Windows.Forms.Padding(4);
             this.btn_remove5.Name = "btn_remove5";
             this.btn_remove5.Size = new System.Drawing.Size(43, 31);
@@ -234,7 +537,7 @@ namespace embul_thiyal
             // btn_remove4
             // 
             this.btn_remove4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_remove4.Location = new System.Drawing.Point(415, 248);
+            this.btn_remove4.Location = new System.Drawing.Point(415, 242);
             this.btn_remove4.Margin = new System.Windows.Forms.Padding(4);
             this.btn_remove4.Name = "btn_remove4";
             this.btn_remove4.Size = new System.Drawing.Size(43, 31);
@@ -247,7 +550,7 @@ namespace embul_thiyal
             // btn_remove3
             // 
             this.btn_remove3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_remove3.Location = new System.Drawing.Point(415, 203);
+            this.btn_remove3.Location = new System.Drawing.Point(415, 197);
             this.btn_remove3.Margin = new System.Windows.Forms.Padding(4);
             this.btn_remove3.Name = "btn_remove3";
             this.btn_remove3.Size = new System.Drawing.Size(43, 31);
@@ -260,7 +563,7 @@ namespace embul_thiyal
             // btn_remove2
             // 
             this.btn_remove2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_remove2.Location = new System.Drawing.Point(415, 162);
+            this.btn_remove2.Location = new System.Drawing.Point(415, 156);
             this.btn_remove2.Margin = new System.Windows.Forms.Padding(4);
             this.btn_remove2.Name = "btn_remove2";
             this.btn_remove2.Size = new System.Drawing.Size(43, 31);
@@ -273,7 +576,7 @@ namespace embul_thiyal
             // btn_remove1
             // 
             this.btn_remove1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_remove1.Location = new System.Drawing.Point(415, 127);
+            this.btn_remove1.Location = new System.Drawing.Point(415, 121);
             this.btn_remove1.Margin = new System.Windows.Forms.Padding(4);
             this.btn_remove1.Name = "btn_remove1";
             this.btn_remove1.Size = new System.Drawing.Size(43, 31);
@@ -287,11 +590,11 @@ namespace embul_thiyal
             // 
             this.lbl_total.AutoSize = true;
             this.lbl_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_total.Location = new System.Drawing.Point(271, 853);
+            this.lbl_total.Location = new System.Drawing.Point(209, 436);
             this.lbl_total.Name = "lbl_total";
-            this.lbl_total.Size = new System.Drawing.Size(54, 25);
+            this.lbl_total.Size = new System.Drawing.Size(61, 25);
             this.lbl_total.TabIndex = 0;
-            this.lbl_total.Text = "0.00";
+            this.lbl_total.Text = "Total";
             // 
             // lbl_tot5
             // 
@@ -468,541 +771,56 @@ namespace embul_thiyal
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
-            // btn_shotees
-            // 
-            this.btn_shotees.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_shotees.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_shotees.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_shotees.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_shotees.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_shotees.ForeColor = System.Drawing.Color.White;
-            this.btn_shotees.Location = new System.Drawing.Point(1201, 333);
-            this.btn_shotees.Name = "btn_shotees";
-            this.btn_shotees.Size = new System.Drawing.Size(140, 118);
-            this.btn_shotees.TabIndex = 17;
-            this.btn_shotees.Text = "Shorteats";
-            this.btn_shotees.Click += new System.EventHandler(this.btn_shotees_Click);
-            // 
-            // btn_add2Bill
-            // 
-            this.btn_add2Bill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_add2Bill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_add2Bill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_add2Bill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_add2Bill.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_add2Bill.ForeColor = System.Drawing.Color.White;
-            this.btn_add2Bill.Location = new System.Drawing.Point(509, 675);
-            this.btn_add2Bill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_add2Bill.Name = "btn_add2Bill";
-            this.btn_add2Bill.Size = new System.Drawing.Size(318, 44);
-            this.btn_add2Bill.TabIndex = 8;
-            this.btn_add2Bill.Text = "Add item";
-            this.btn_add2Bill.Click += new System.EventHandler(this.btn_add2Bill_Click);
-            // 
-            // txt_uPrice
-            // 
-            this.txt_uPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_uPrice.DefaultText = "";
-            this.txt_uPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_uPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_uPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_uPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_uPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_uPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_uPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_uPrice.Location = new System.Drawing.Point(231, 687);
-            this.txt_uPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_uPrice.Name = "txt_uPrice";
-            this.txt_uPrice.PasswordChar = '\0';
-            this.txt_uPrice.PlaceholderText = "";
-            this.txt_uPrice.SelectedText = "";
-            this.txt_uPrice.Size = new System.Drawing.Size(244, 32);
-            this.txt_uPrice.TabIndex = 9;
-            // 
-            // txt_discount
-            // 
-            this.txt_discount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_discount.DefaultText = "";
-            this.txt_discount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_discount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_discount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_discount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_discount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_discount.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_discount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_discount.Location = new System.Drawing.Point(231, 921);
-            this.txt_discount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_discount.Name = "txt_discount";
-            this.txt_discount.PasswordChar = '\0';
-            this.txt_discount.PlaceholderText = "";
-            this.txt_discount.SelectedText = "";
-            this.txt_discount.Size = new System.Drawing.Size(244, 32);
-            this.txt_discount.TabIndex = 9;
-            // 
-            // txt_quantity
-            // 
-            this.txt_quantity.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_quantity.DefaultText = "";
-            this.txt_quantity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_quantity.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_quantity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_quantity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_quantity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_quantity.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_quantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_quantity.Location = new System.Drawing.Point(647, 623);
-            this.txt_quantity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_quantity.Name = "txt_quantity";
-            this.txt_quantity.PasswordChar = '\0';
-            this.txt_quantity.PlaceholderText = "";
-            this.txt_quantity.SelectedText = "";
-            this.txt_quantity.Size = new System.Drawing.Size(180, 32);
-            this.txt_quantity.TabIndex = 9;
-            // 
-            // txt_mobileNumber
-            // 
-            this.txt_mobileNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_mobileNumber.DefaultText = "";
-            this.txt_mobileNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_mobileNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_mobileNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_mobileNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_mobileNumber.Enabled = false;
-            this.txt_mobileNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_mobileNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_mobileNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_mobileNumber.Location = new System.Drawing.Point(231, 861);
-            this.txt_mobileNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_mobileNumber.Name = "txt_mobileNumber";
-            this.txt_mobileNumber.PasswordChar = '\0';
-            this.txt_mobileNumber.PlaceholderText = "";
-            this.txt_mobileNumber.SelectedText = "";
-            this.txt_mobileNumber.Size = new System.Drawing.Size(244, 32);
-            this.txt_mobileNumber.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 626);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 28);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Item name";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 690);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 28);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Unit Price";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(513, 626);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 28);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Quantitiy";
-            // 
-            // lbl_availblePoints
-            // 
-            this.lbl_availblePoints.AutoSize = true;
-            this.lbl_availblePoints.Enabled = false;
-            this.lbl_availblePoints.Location = new System.Drawing.Point(506, 924);
-            this.lbl_availblePoints.Name = "lbl_availblePoints";
-            this.lbl_availblePoints.Size = new System.Drawing.Size(164, 28);
-            this.lbl_availblePoints.TabIndex = 10;
-            this.lbl_availblePoints.Text = "Available points";
-            // 
-            // lbl_phoneNumber
-            // 
-            this.lbl_phoneNumber.AutoSize = true;
-            this.lbl_phoneNumber.Enabled = false;
-            this.lbl_phoneNumber.Location = new System.Drawing.Point(30, 861);
-            this.lbl_phoneNumber.Name = "lbl_phoneNumber";
-            this.lbl_phoneNumber.Size = new System.Drawing.Size(152, 28);
-            this.lbl_phoneNumber.TabIndex = 10;
-            this.lbl_phoneNumber.Text = "Phone number";
-            // 
-            // cb_loyaltyPoints
-            // 
-            this.cb_loyaltyPoints.AutoSize = true;
-            this.cb_loyaltyPoints.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_loyaltyPoints.CheckedState.BorderRadius = 0;
-            this.cb_loyaltyPoints.CheckedState.BorderThickness = 0;
-            this.cb_loyaltyPoints.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_loyaltyPoints.Location = new System.Drawing.Point(511, 861);
-            this.cb_loyaltyPoints.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cb_loyaltyPoints.Name = "cb_loyaltyPoints";
-            this.cb_loyaltyPoints.Size = new System.Drawing.Size(148, 32);
-            this.cb_loyaltyPoints.TabIndex = 12;
-            this.cb_loyaltyPoints.Text = "Loyal points";
-            this.cb_loyaltyPoints.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.cb_loyaltyPoints.UncheckedState.BorderRadius = 0;
-            this.cb_loyaltyPoints.UncheckedState.BorderThickness = 0;
-            this.cb_loyaltyPoints.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.cb_loyaltyPoints.CheckedChanged += new System.EventHandler(this.cb_loyaltyPoints_CheckedChanged);
-            // 
-            // txt_iName
-            // 
-            this.txt_iName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_iName.DefaultText = "";
-            this.txt_iName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_iName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_iName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_iName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_iName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_iName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_iName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_iName.Location = new System.Drawing.Point(231, 626);
-            this.txt_iName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_iName.Name = "txt_iName";
-            this.txt_iName.PasswordChar = '\0';
-            this.txt_iName.PlaceholderText = "";
-            this.txt_iName.SelectedText = "";
-            this.txt_iName.Size = new System.Drawing.Size(244, 32);
-            this.txt_iName.TabIndex = 14;
-            // 
-            // dgv_item
-            // 
-            this.dgv_item.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_item.Location = new System.Drawing.Point(27, 28);
-            this.dgv_item.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgv_item.Name = "dgv_item";
-            this.dgv_item.RowHeadersWidth = 51;
-            this.dgv_item.RowTemplate.Height = 24;
-            this.dgv_item.Size = new System.Drawing.Size(800, 554);
-            this.dgv_item.TabIndex = 15;
-            this.dgv_item.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_item_CellClick);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(31, 924);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 28);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Discount";
-            // 
-            // btn_riceandcurry
-            // 
-            this.btn_riceandcurry.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_riceandcurry.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_riceandcurry.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_riceandcurry.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_riceandcurry.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_riceandcurry.ForeColor = System.Drawing.Color.White;
-            this.btn_riceandcurry.Location = new System.Drawing.Point(892, 71);
-            this.btn_riceandcurry.Name = "btn_riceandcurry";
-            this.btn_riceandcurry.Size = new System.Drawing.Size(140, 118);
-            this.btn_riceandcurry.TabIndex = 17;
-            this.btn_riceandcurry.Text = "Rice And Curry";
-            this.btn_riceandcurry.Click += new System.EventHandler(this.btn_riceandcurry_Click);
-            // 
-            // btn_Fried
-            // 
-            this.btn_Fried.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Fried.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Fried.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Fried.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Fried.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Fried.ForeColor = System.Drawing.Color.White;
-            this.btn_Fried.Location = new System.Drawing.Point(892, 199);
-            this.btn_Fried.Name = "btn_Fried";
-            this.btn_Fried.Size = new System.Drawing.Size(140, 118);
-            this.btn_Fried.TabIndex = 17;
-            this.btn_Fried.Text = "Fried";
-            this.btn_Fried.Click += new System.EventHandler(this.btn_Fried_Click);
-            // 
-            // btn_juice
-            // 
-            this.btn_juice.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_juice.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_juice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_juice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_juice.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_juice.ForeColor = System.Drawing.Color.White;
-            this.btn_juice.Location = new System.Drawing.Point(1048, 332);
-            this.btn_juice.Name = "btn_juice";
-            this.btn_juice.Size = new System.Drawing.Size(140, 118);
-            this.btn_juice.TabIndex = 17;
-            this.btn_juice.Text = "Juice";
-            this.btn_juice.Click += new System.EventHandler(this.btn_juice_Click);
-            // 
-            // btn_sup
-            // 
-            this.btn_sup.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_sup.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_sup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_sup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_sup.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_sup.ForeColor = System.Drawing.Color.White;
-            this.btn_sup.Location = new System.Drawing.Point(1354, 332);
-            this.btn_sup.Name = "btn_sup";
-            this.btn_sup.Size = new System.Drawing.Size(140, 118);
-            this.btn_sup.TabIndex = 17;
-            this.btn_sup.Text = "Soups";
-            this.btn_sup.Click += new System.EventHandler(this.btn_sup_Click);
-            // 
-            // btn_stoo
-            // 
-            this.btn_stoo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_stoo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_stoo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_stoo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_stoo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_stoo.ForeColor = System.Drawing.Color.White;
-            this.btn_stoo.Location = new System.Drawing.Point(1201, 71);
-            this.btn_stoo.Name = "btn_stoo";
-            this.btn_stoo.Size = new System.Drawing.Size(140, 118);
-            this.btn_stoo.TabIndex = 17;
-            this.btn_stoo.Text = "Stew";
-            this.btn_stoo.Click += new System.EventHandler(this.btn_stoo_Click);
-            // 
-            // btn_rost
-            // 
-            this.btn_rost.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_rost.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_rost.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_rost.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_rost.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_rost.ForeColor = System.Drawing.Color.White;
-            this.btn_rost.Location = new System.Drawing.Point(1045, 201);
-            this.btn_rost.Name = "btn_rost";
-            this.btn_rost.Size = new System.Drawing.Size(140, 118);
-            this.btn_rost.TabIndex = 17;
-            this.btn_rost.Text = "Roast";
-            this.btn_rost.Click += new System.EventHandler(this.btn_rost_Click);
-            // 
-            // btn_bayit
-            // 
-            this.btn_bayit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_bayit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_bayit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_bayit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_bayit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_bayit.ForeColor = System.Drawing.Color.White;
-            this.btn_bayit.Location = new System.Drawing.Point(1354, 200);
-            this.btn_bayit.Name = "btn_bayit";
-            this.btn_bayit.Size = new System.Drawing.Size(140, 118);
-            this.btn_bayit.TabIndex = 17;
-            this.btn_bayit.Text = "Bites";
-            this.btn_bayit.Click += new System.EventHandler(this.btn_bayit_Click);
-            // 
-            // btn_friedRice
-            // 
-            this.btn_friedRice.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_friedRice.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_friedRice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_friedRice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_friedRice.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_friedRice.ForeColor = System.Drawing.Color.White;
-            this.btn_friedRice.Location = new System.Drawing.Point(1354, 71);
-            this.btn_friedRice.Name = "btn_friedRice";
-            this.btn_friedRice.Size = new System.Drawing.Size(140, 118);
-            this.btn_friedRice.TabIndex = 17;
-            this.btn_friedRice.Text = "Fried Rice";
-            this.btn_friedRice.Click += new System.EventHandler(this.btn_friedRice_Click);
-            // 
-            // btn_chopsyRice
-            // 
-            this.btn_chopsyRice.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_chopsyRice.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_chopsyRice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_chopsyRice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_chopsyRice.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_chopsyRice.ForeColor = System.Drawing.Color.White;
-            this.btn_chopsyRice.Location = new System.Drawing.Point(892, 332);
-            this.btn_chopsyRice.Name = "btn_chopsyRice";
-            this.btn_chopsyRice.Size = new System.Drawing.Size(140, 118);
-            this.btn_chopsyRice.TabIndex = 17;
-            this.btn_chopsyRice.Text = "Chopsy Rice";
-            this.btn_chopsyRice.Click += new System.EventHandler(this.btn_chopsyRice_Click);
-            // 
-            // btn_dewal
-            // 
-            this.btn_dewal.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_dewal.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_dewal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_dewal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_dewal.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_dewal.ForeColor = System.Drawing.Color.White;
-            this.btn_dewal.Location = new System.Drawing.Point(891, 464);
-            this.btn_dewal.Name = "btn_dewal";
-            this.btn_dewal.Size = new System.Drawing.Size(140, 118);
-            this.btn_dewal.TabIndex = 17;
-            this.btn_dewal.Text = "Devilled";
-            this.btn_dewal.Click += new System.EventHandler(this.btn_dewal_Click);
-            // 
-            // btn_kottu
-            // 
-            this.btn_kottu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_kottu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_kottu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_kottu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_kottu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_kottu.ForeColor = System.Drawing.Color.White;
-            this.btn_kottu.Location = new System.Drawing.Point(1046, 71);
-            this.btn_kottu.Name = "btn_kottu";
-            this.btn_kottu.Size = new System.Drawing.Size(140, 118);
-            this.btn_kottu.TabIndex = 17;
-            this.btn_kottu.Text = "Kottu";
-            this.btn_kottu.Click += new System.EventHandler(this.btn_kottu_Click);
-            // 
-            // btn_Noodless
-            // 
-            this.btn_Noodless.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Noodless.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Noodless.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Noodless.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Noodless.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Noodless.ForeColor = System.Drawing.Color.White;
-            this.btn_Noodless.Location = new System.Drawing.Point(1202, 201);
-            this.btn_Noodless.Name = "btn_Noodless";
-            this.btn_Noodless.Size = new System.Drawing.Size(140, 118);
-            this.btn_Noodless.TabIndex = 17;
-            this.btn_Noodless.Text = "Noodles";
-            this.btn_Noodless.Click += new System.EventHandler(this.btn_Noodless_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.AutoSize = true;
-            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.groupBox1.Controls.Add(this.dgv_item1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.btn_shotees);
-            this.groupBox1.Controls.Add(this.btn_Noodless);
-            this.groupBox1.Controls.Add(this.btn_friedRice);
-            this.groupBox1.Controls.Add(this.btn_kottu);
-            this.groupBox1.Controls.Add(this.btn_dewal);
-            this.groupBox1.Controls.Add(this.btn_chopsyRice);
-            this.groupBox1.Controls.Add(this.btn_sup);
-            this.groupBox1.Controls.Add(this.btn_bayit);
-            this.groupBox1.Controls.Add(this.btn_rost);
-            this.groupBox1.Controls.Add(this.btn_stoo);
-            this.groupBox1.Controls.Add(this.btn_juice);
-            this.groupBox1.Controls.Add(this.btn_Fried);
-            this.groupBox1.Controls.Add(this.btn_riceandcurry);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.dgv_item);
-            this.groupBox1.Controls.Add(this.txt_iName);
-            this.groupBox1.Controls.Add(this.cb_loyaltyPoints);
-            this.groupBox1.Controls.Add(this.lbl_phoneNumber);
-            this.groupBox1.Controls.Add(this.lbl_availblePoints);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txt_mobileNumber);
-            this.groupBox1.Controls.Add(this.txt_quantity);
-            this.groupBox1.Controls.Add(this.txt_discount);
-            this.groupBox1.Controls.Add(this.txt_uPrice);
-            this.groupBox1.Controls.Add(this.btn_add2Bill);
-            this.groupBox1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(1574, 1102);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Item Details";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Enabled = false;
-            this.label2.Font = new System.Drawing.Font("Cascadia Mono", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1113, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(225, 37);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Item Category";
-            // 
-            // dgv_item1
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv_item1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_item1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_item1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_item1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_item1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_item1.Location = new System.Drawing.Point(27, 28);
-            this.dgv_item1.Name = "dgv_item1";
-            this.dgv_item1.RowHeadersVisible = false;
-            this.dgv_item1.RowHeadersWidth = 51;
-            this.dgv_item1.RowTemplate.Height = 24;
-            this.dgv_item1.Size = new System.Drawing.Size(813, 554);
-            this.dgv_item1.TabIndex = 19;
-            this.dgv_item1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_item1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgv_item1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgv_item1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgv_item1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgv_item1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_item1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_item1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dgv_item1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgv_item1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_item1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_item1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_item1.ThemeStyle.HeaderStyle.Height = 4;
-            this.dgv_item1.ThemeStyle.ReadOnly = false;
-            this.dgv_item1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_item1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_item1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_item1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_item1.ThemeStyle.RowsStyle.Height = 24;
-            this.dgv_item1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_item1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_item1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_item1_CellClick_1);
-            // 
             // frm_sale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1800, 897);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.guna2Button5);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_sale";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sales";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_sale_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_item)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_item1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_item)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Guna.UI2.WinForms.Guna2Button btn_add2Bill;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private Guna.UI2.WinForms.Guna2CheckBox cb_loyaltyPoints;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_search;
+        private System.Windows.Forms.Label lbl_availblePoints;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2TextBox txt_mobileNumber;
+        private Guna.UI2.WinForms.Guna2TextBox txt_quantity;
+        private Guna.UI2.WinForms.Guna2TextBox txt_uPrice;
+        private System.Windows.Forms.Label lbl_phoneNumber;
+        private Guna.UI2.WinForms.Guna2TextBox txt_itemCode;
+        private Guna.UI2.WinForms.Guna2Button btn_select;
+        private Guna.UI2.WinForms.Guna2TextBox txt_iName;
+        private System.Windows.Forms.DataGridView dgv_item;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2TextBox txt_discount;
         private System.Windows.Forms.Label lbl_item1;
         private System.Windows.Forms.Label lbl_qty1;
         private System.Windows.Forms.Label lbl_unitPrice1;
@@ -1034,36 +852,5 @@ namespace embul_thiyal
         private Guna.UI2.WinForms.Guna2Button btn_process;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
-        private Guna.UI2.WinForms.Guna2Button btn_shotees;
-        private Guna.UI2.WinForms.Guna2Button btn_add2Bill;
-        private Guna.UI2.WinForms.Guna2TextBox txt_uPrice;
-        private Guna.UI2.WinForms.Guna2TextBox txt_discount;
-        private Guna.UI2.WinForms.Guna2TextBox txt_quantity;
-        private Guna.UI2.WinForms.Guna2TextBox txt_mobileNumber;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lbl_availblePoints;
-        private System.Windows.Forms.Label lbl_phoneNumber;
-        private Guna.UI2.WinForms.Guna2CheckBox cb_loyaltyPoints;
-        private Guna.UI2.WinForms.Guna2TextBox txt_iName;
-        private System.Windows.Forms.DataGridView dgv_item;
-        private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2Button btn_riceandcurry;
-        private Guna.UI2.WinForms.Guna2Button btn_Fried;
-        private Guna.UI2.WinForms.Guna2Button btn_juice;
-        private Guna.UI2.WinForms.Guna2Button btn_sup;
-        private Guna.UI2.WinForms.Guna2Button btn_stoo;
-        private Guna.UI2.WinForms.Guna2Button btn_rost;
-        private Guna.UI2.WinForms.Guna2Button btn_bayit;
-        private Guna.UI2.WinForms.Guna2Button btn_friedRice;
-        private Guna.UI2.WinForms.Guna2Button btn_chopsyRice;
-        private Guna.UI2.WinForms.Guna2Button btn_dewal;
-        private Guna.UI2.WinForms.Guna2Button btn_kottu;
-        private Guna.UI2.WinForms.Guna2Button btn_Noodless;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2DataGridView dgv_item1;
     }
 }
