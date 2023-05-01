@@ -60,6 +60,7 @@ namespace embul_thiyal
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
             dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            dgv_item1.DataSource = ds.Tables["item"].DefaultView;
 
             dgv_item.Columns[0].Name = "Item ID";
             dgv_item.Columns[1].Name = "Iem Name";
@@ -585,7 +586,7 @@ namespace embul_thiyal
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Bites'", cls_connection.con);
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
-            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            dgv_item1.DataSource = ds.Tables["item"].DefaultView;
 
             dgv_item.Columns[0].Name = "Item ID";
             dgv_item.Columns[1].Name = "Iem Name";
@@ -600,7 +601,7 @@ namespace embul_thiyal
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Rice And Curry'", cls_connection.con);
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
-            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            dgv_item1.DataSource = ds.Tables["item"].DefaultView;
             
 
             dgv_item.Columns[0].Name = "Item ID";
@@ -630,7 +631,7 @@ namespace embul_thiyal
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Fried Rice'", cls_connection.con);
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
-            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            dgv_item1.DataSource = ds.Tables["item"].DefaultView;
 
             dgv_item.Columns[0].Name = "Item ID";
             dgv_item.Columns[1].Name = "Iem Name";
@@ -645,7 +646,7 @@ namespace embul_thiyal
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Chopsy Rice'", cls_connection.con);
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
-            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            dgv_item1.DataSource = ds.Tables["item"].DefaultView;
 
             dgv_item.Columns[0].Name = "Item ID";
             dgv_item.Columns[1].Name = "Iem Name";
@@ -660,7 +661,7 @@ namespace embul_thiyal
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Devilled'", cls_connection.con);
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
-            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            dgv_item1.DataSource = ds.Tables["item"].DefaultView;
 
             dgv_item.Columns[0].Name = "Item ID";
             dgv_item.Columns[1].Name = "Iem Name";
@@ -675,7 +676,7 @@ namespace embul_thiyal
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Kottu'", cls_connection.con);
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
-            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            dgv_item1.DataSource = ds.Tables["item"].DefaultView;
 
             dgv_item.Columns[0].Name = "Item ID";
             dgv_item.Columns[1].Name = "Iem Name";
@@ -690,7 +691,7 @@ namespace embul_thiyal
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Noodles'", cls_connection.con);
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
-            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            dgv_item1.DataSource = ds.Tables["item"].DefaultView;
 
             dgv_item.Columns[0].Name = "Item ID";
             dgv_item.Columns[1].Name = "Iem Name";
@@ -705,7 +706,7 @@ namespace embul_thiyal
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Shorteats'", cls_connection.con);
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
-            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            dgv_item1.DataSource = ds.Tables["item"].DefaultView;
 
             dgv_item.Columns[0].Name = "Item ID";
             dgv_item.Columns[1].Name = "Iem Name";
@@ -720,7 +721,7 @@ namespace embul_thiyal
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Fried'", cls_connection.con);
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
-            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            dgv_item1.DataSource = ds.Tables["item"].DefaultView;
 
             dgv_item.Columns[0].Name = "Item ID";
             dgv_item.Columns[1].Name = "Iem Name";
@@ -735,7 +736,7 @@ namespace embul_thiyal
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Juice'", cls_connection.con);
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
-            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            dgv_item1.DataSource = ds.Tables["item"].DefaultView;
 
             dgv_item.Columns[0].Name = "Item ID";
             dgv_item.Columns[1].Name = "Iem Name";
@@ -750,7 +751,7 @@ namespace embul_thiyal
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Soups'", cls_connection.con);
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
-            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            dgv_item1.DataSource = ds.Tables["item"].DefaultView;
 
             dgv_item.Columns[0].Name = "Item ID";
             dgv_item.Columns[1].Name = "Iem Name";
@@ -765,7 +766,7 @@ namespace embul_thiyal
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Stew'", cls_connection.con);
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
-            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            dgv_item1.DataSource = ds.Tables["item"].DefaultView;
 
             dgv_item.Columns[0].Name = "Item ID";
             dgv_item.Columns[1].Name = "Iem Name";
@@ -780,7 +781,7 @@ namespace embul_thiyal
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Roast'", cls_connection.con);
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
-            dgv_item.DataSource = ds.Tables["item"].DefaultView;
+            dgv_item1.DataSource = ds.Tables["item"].DefaultView;
             
 
             dgv_item.Columns[0].Name = "Item ID";
@@ -794,6 +795,23 @@ namespace embul_thiyal
         private void dgv_item1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgv_item1_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex != -1)
+            {
+                DataGridViewRow dgvrow = dgv_item.Rows[e.RowIndex];
+                txt_iName.Text = dgvrow.Cells[1].Value.ToString();
+                txt_uPrice.Text = dgvrow.Cells[2].Value.ToString();
+              
+
+            }
         }
     }
 }
