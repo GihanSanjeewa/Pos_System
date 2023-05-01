@@ -89,43 +89,43 @@ namespace embul_thiyal
 
         private void txt_search_TextChanged(object sender, EventArgs e)
         {
-            cls_connection.open_connection();
-            MySqlCommand cmd = new MySqlCommand(" SELECT `item_id`,`item_name`,`item_price`,`category` FROM `item` WHERE item_name like '%" + txt_search.Text + "%' ", cls_connection.con);
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.SelectCommand = cmd;
-            dt.Clear();
-            da.Fill(dt);
-            dgv_item.DataSource = dt;
+            //cls_connection.open_connection();
+            //MySqlCommand cmd = new MySqlCommand(" SELECT `item_id`,`item_name`,`item_price`,`category` FROM `item` WHERE item_name like '%" + txt_search.Text + "%' ", cls_connection.con);
+            //MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            //DataTable dt = new DataTable();
+            //da.SelectCommand = cmd;
+            //dt.Clear();
+            //da.Fill(dt);
+            //dgv_item.DataSource = dt;
             
 
 
-            cls_connection.close_connection();
+            //cls_connection.close_connection();
         }
 
         private void btn_select_Click(object sender, EventArgs e)
         {
             
-            MySqlCommand cmd1 = new MySqlCommand("SELECT `item_id`,`item_name`,`item_price` FROM `item` WHERE item_id =@id", cls_connection.con);
-            cls_connection.open_connection();
-            cmd1.Parameters.AddWithValue("id", txt_itemCode.Text);
+            //MySqlCommand cmd1 = new MySqlCommand("SELECT `item_id`,`item_name`,`item_price` FROM `item` WHERE item_id =@id", cls_connection.con);
+            //cls_connection.open_connection();
+            //cmd1.Parameters.AddWithValue("id", txt_itemCode.Text);
 
-            MySqlDataReader reader1 = cmd1.ExecuteReader();
+            //MySqlDataReader reader1 = cmd1.ExecuteReader();
 
-            if (reader1.Read())
-            {
-                    txt_uPrice.Text = reader1["item_price"].ToString();
-                    txt_iName.Text = reader1["item_name"].ToString();
+            //if (reader1.Read())
+            //{
+            //        txt_uPrice.Text = reader1["item_price"].ToString();
+            //        txt_iName.Text = reader1["item_name"].ToString();
 
-            }
+            //}
 
-            else
-            {
-                MessageBox.Show("No data found");
-            }
+            //else
+            //{
+            //    MessageBox.Show("No data found");
+            //}
             
-            reader1.Close();
-            cls_connection.close_connection();
+            //reader1.Close();
+            //cls_connection.close_connection();
         }
 
         private void dgv_item_CellContentClick(object sender, DataGridViewCellEventArgs e)
