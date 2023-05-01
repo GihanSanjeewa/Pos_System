@@ -581,11 +581,6 @@ namespace embul_thiyal
             e.Graphics.DrawString("Rs - " + lbl_total.Text, new System.Drawing.Font("Arial", 12, FontStyle.Regular), Brushes.Gray, new System.Drawing.Point(650, 670));
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btn_bayit_Click(object sender, EventArgs e)
         {
             MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category = 'Bites'", cls_connection.con);
