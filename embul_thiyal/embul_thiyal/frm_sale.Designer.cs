@@ -29,9 +29,9 @@ namespace embul_thiyal
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_sale));
             this.label5 = new System.Windows.Forms.Label();
             this.btn_add2Bill = new Guna.UI2.WinForms.Guna2Button();
@@ -226,6 +226,7 @@ namespace embul_thiyal
             this.btn_bite.Name = "btn_bite";
             this.btn_bite.Size = new System.Drawing.Size(140, 140);
             this.btn_bite.TabIndex = 42;
+            this.btn_bite.Click += new System.EventHandler(this.btn_bite_Click);
             // 
             // label17
             // 
@@ -255,6 +256,7 @@ namespace embul_thiyal
             this.btn_roast.Name = "btn_roast";
             this.btn_roast.Size = new System.Drawing.Size(140, 140);
             this.btn_roast.TabIndex = 40;
+            this.btn_roast.Click += new System.EventHandler(this.btn_roast_Click);
             // 
             // label18
             // 
@@ -284,6 +286,7 @@ namespace embul_thiyal
             this.btn_stew.Name = "btn_stew";
             this.btn_stew.Size = new System.Drawing.Size(140, 140);
             this.btn_stew.TabIndex = 38;
+            this.btn_stew.Click += new System.EventHandler(this.btn_stew_Click);
             // 
             // label19
             // 
@@ -313,6 +316,7 @@ namespace embul_thiyal
             this.btn_soup.Name = "btn_soup";
             this.btn_soup.Size = new System.Drawing.Size(140, 140);
             this.btn_soup.TabIndex = 36;
+            this.btn_soup.Click += new System.EventHandler(this.btn_soup_Click);
             // 
             // label20
             // 
@@ -342,6 +346,7 @@ namespace embul_thiyal
             this.btn_juice.Name = "btn_juice";
             this.btn_juice.Size = new System.Drawing.Size(140, 140);
             this.btn_juice.TabIndex = 34;
+            this.btn_juice.Click += new System.EventHandler(this.btn_juice_Click);
             // 
             // label13
             // 
@@ -371,6 +376,7 @@ namespace embul_thiyal
             this.btn_fried.Name = "btn_fried";
             this.btn_fried.Size = new System.Drawing.Size(140, 140);
             this.btn_fried.TabIndex = 32;
+            this.btn_fried.Click += new System.EventHandler(this.btn_fried_Click);
             // 
             // label14
             // 
@@ -400,6 +406,7 @@ namespace embul_thiyal
             this.btn_shorteats.Name = "btn_shorteats";
             this.btn_shorteats.Size = new System.Drawing.Size(140, 140);
             this.btn_shorteats.TabIndex = 30;
+            this.btn_shorteats.Click += new System.EventHandler(this.btn_shorteats_Click);
             // 
             // label15
             // 
@@ -429,6 +436,7 @@ namespace embul_thiyal
             this.btn_noodles.Name = "btn_noodles";
             this.btn_noodles.Size = new System.Drawing.Size(140, 140);
             this.btn_noodles.TabIndex = 28;
+            this.btn_noodles.Click += new System.EventHandler(this.btn_noodles_Click);
             // 
             // label16
             // 
@@ -458,6 +466,7 @@ namespace embul_thiyal
             this.btn_kottu.Name = "btn_kottu";
             this.btn_kottu.Size = new System.Drawing.Size(140, 140);
             this.btn_kottu.TabIndex = 26;
+            this.btn_kottu.Click += new System.EventHandler(this.btn_kottu_Click);
             // 
             // label12
             // 
@@ -487,6 +496,7 @@ namespace embul_thiyal
             this.btn_devilled.Name = "btn_devilled";
             this.btn_devilled.Size = new System.Drawing.Size(140, 140);
             this.btn_devilled.TabIndex = 24;
+            this.btn_devilled.Click += new System.EventHandler(this.btn_devilled_Click);
             // 
             // label11
             // 
@@ -516,6 +526,7 @@ namespace embul_thiyal
             this.btn_chopsyrice.Name = "btn_chopsyrice";
             this.btn_chopsyrice.Size = new System.Drawing.Size(140, 140);
             this.btn_chopsyrice.TabIndex = 22;
+            this.btn_chopsyrice.Click += new System.EventHandler(this.btn_chopsyrice_Click);
             // 
             // label9
             // 
@@ -545,6 +556,7 @@ namespace embul_thiyal
             this.btn_friedrice.Name = "btn_friedrice";
             this.btn_friedrice.Size = new System.Drawing.Size(140, 140);
             this.btn_friedrice.TabIndex = 20;
+            this.btn_friedrice.Click += new System.EventHandler(this.btn_friedrice_Click);
             // 
             // label7
             // 
@@ -574,29 +586,30 @@ namespace embul_thiyal
             this.btn_riceandcurry.Name = "btn_riceandcurry";
             this.btn_riceandcurry.Size = new System.Drawing.Size(140, 140);
             this.btn_riceandcurry.TabIndex = 18;
+            this.btn_riceandcurry.Click += new System.EventHandler(this.btn_riceandcurry_Click);
             // 
             // dgv_item
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dgv_item.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_item.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle46.BackColor = System.Drawing.Color.White;
+            this.dgv_item.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_item.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
             this.dgv_item.ColumnHeadersHeight = 4;
             this.dgv_item.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_item.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle48.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_item.DefaultCellStyle = dataGridViewCellStyle48;
             this.dgv_item.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_item.Location = new System.Drawing.Point(19, 36);
             this.dgv_item.Name = "dgv_item";

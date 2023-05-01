@@ -74,10 +74,19 @@ namespace embul_thiyal
             this.cmb_category.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmb_category.ItemHeight = 30;
             this.cmb_category.Items.AddRange(new object[] {
-            "Main food items",
+            "Rice and Curry",
+            "Kottu",
+            "Stew",
+            "Fried Rice",
+            "Fried",
+            "Roast",
+            "Noodles",
+            "Bites",
+            "Chopsy Rice",
+            "Juice",
             "Shorteats",
-            "Grocery items",
-            "Soft drinks"});
+            "Soup",
+            "Devilled"});
             this.cmb_category.Location = new System.Drawing.Point(155, 198);
             this.cmb_category.Name = "cmb_category";
             this.cmb_category.Size = new System.Drawing.Size(326, 36);
