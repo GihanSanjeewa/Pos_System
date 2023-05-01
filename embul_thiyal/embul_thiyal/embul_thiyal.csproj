@@ -360,6 +360,45 @@
   <ItemGroup>
     <None Include="Resources\vertical-fast-food-frame-27178728.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\curry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fried-rice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barbecue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken-leg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ramen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juices.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hot-soup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fried-rice %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken-leg %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fried-rice %282%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
