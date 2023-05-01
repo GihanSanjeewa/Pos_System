@@ -95,14 +95,23 @@
             this.cmb_category.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_category.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cmb_category.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmb_category.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_category.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.cmb_category.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmb_category.ItemHeight = 30;
             this.cmb_category.Items.AddRange(new object[] {
-            "Main food items",
+            "Rice and Curry",
+            "Kottu",
+            "Stew",
+            "Fried Rice",
+            "Fried",
+            "Roast",
+            "Noodles",
+            "Bites",
+            "Chopsy Rice",
+            "Juice",
             "Shorteats",
-            "Grocery items",
-            "Soft drinks"});
+            "Soup",
+            "Devilled"});
             this.cmb_category.Location = new System.Drawing.Point(158, 337);
             this.cmb_category.Name = "cmb_category";
             this.cmb_category.Size = new System.Drawing.Size(326, 36);

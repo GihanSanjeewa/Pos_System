@@ -54,7 +54,20 @@ namespace embul_thiyal
 
         private void btn_search_customer_Click(object sender, EventArgs e)
         {
-            
+            cls_connection.open_connection();
+
+            string MysqlQry = "delete from lcustomer where m_number =(" + txt_mobile_number.Text + ")";
+
+            MySqlCommand cmd = new MySqlCommand(MysqlQry, cls_connection.con);
+
+            cmd.ExecuteNonQuery();
+
+            MessageBox.Show("Done!!");
+
+            cls_connection.close_connection();
+
+
+            fndataLoad();
         }
 
         private void txt_mobile_number_TextChanged(object sender, EventArgs e)
