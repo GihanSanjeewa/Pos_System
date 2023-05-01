@@ -498,6 +498,8 @@ namespace embul_thiyal
             {
                 lbl_total.Text = (Convert.ToInt32(lbl_tot1.Text) - Convert.ToInt32(txt_discount.Text)).ToString();
             }
+
+
             saveData();
         }
         private void printBill()
@@ -510,6 +512,7 @@ namespace embul_thiyal
         {
             cls_connection.open_connection();
             MySqlCommand cmd = new MySqlCommand("INSERT INTO `bill`( `total_price`, `mobile_number`) VALUES (@total_price,@mobile_number)", cls_connection.con);
+
             cmd.Parameters.Clear();
 
 
@@ -767,7 +770,7 @@ namespace embul_thiyal
 
         private void btn_bite_Click(object sender, EventArgs e)
         {
-            MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category ='Bite'", cls_connection.con);
+            MySqlDataAdapter da = new MySqlDataAdapter("Select * from item where category ='Bites'", cls_connection.con);
             DataSet ds = new DataSet();
             da.Fill(ds, "item");
             dgv_item.DataSource = ds.Tables["item"].DefaultView;
@@ -778,6 +781,21 @@ namespace embul_thiyal
             dgv_item.Columns[0].Name = "Item Category";
 
             cls_connection.close_connection();
+        }
+
+        private void dgv_item_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgv_item_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex != -1)
+            {
+                DataGridViewRow dgvrow = dgv_item.Rows[e.RowIndex];
+                txt_iName.Text = dgvrow.Cells[1].Value.ToString();
+                txt_uPrice.Text = dgvrow.Cells[2].Value.ToString();
+            }
         }
     }
 }

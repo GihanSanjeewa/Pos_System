@@ -29,13 +29,14 @@ namespace embul_thiyal
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_sale));
             this.label5 = new System.Windows.Forms.Label();
             this.btn_add2Bill = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label23 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.btn_bite = new Guna.UI2.WinForms.Guna2Button();
             this.label17 = new System.Windows.Forms.Label();
@@ -109,7 +110,6 @@ namespace embul_thiyal
             this.lbl_item2 = new System.Windows.Forms.Label();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.label23 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_item)).BeginInit();
             this.panel1.SuspendLayout();
@@ -135,7 +135,7 @@ namespace embul_thiyal
             this.btn_add2Bill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_add2Bill.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_add2Bill.ForeColor = System.Drawing.Color.White;
-            this.btn_add2Bill.Location = new System.Drawing.Point(507, 705);
+            this.btn_add2Bill.Location = new System.Drawing.Point(507, 747);
             this.btn_add2Bill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add2Bill.Name = "btn_add2Bill";
             this.btn_add2Bill.Size = new System.Drawing.Size(277, 46);
@@ -197,6 +197,16 @@ namespace embul_thiyal
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Item Details";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Malgun Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(1039, 23);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(208, 38);
+            this.label23.TabIndex = 44;
+            this.label23.Text = "Item Category";
             // 
             // label21
             // 
@@ -590,26 +600,26 @@ namespace embul_thiyal
             // 
             // dgv_item
             // 
-            dataGridViewCellStyle46.BackColor = System.Drawing.Color.White;
-            this.dgv_item.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle46;
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_item.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgv_item.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_item.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_item.ColumnHeadersHeight = 4;
             this.dgv_item.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle48.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_item.DefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_item.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_item.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_item.Location = new System.Drawing.Point(19, 36);
             this.dgv_item.Name = "dgv_item";
@@ -639,6 +649,8 @@ namespace embul_thiyal
             this.dgv_item.ThemeStyle.RowsStyle.Height = 24;
             this.dgv_item.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_item.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_item.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_item_CellClick);
+            this.dgv_item.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_item_CellContentClick_1);
             // 
             // label10
             // 
@@ -678,7 +690,7 @@ namespace embul_thiyal
             this.cb_loyaltyPoints.CheckedState.BorderThickness = 0;
             this.cb_loyaltyPoints.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cb_loyaltyPoints.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_loyaltyPoints.Location = new System.Drawing.Point(200, 812);
+            this.cb_loyaltyPoints.Location = new System.Drawing.Point(214, 842);
             this.cb_loyaltyPoints.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_loyaltyPoints.Name = "cb_loyaltyPoints";
             this.cb_loyaltyPoints.Size = new System.Drawing.Size(149, 32);
@@ -694,7 +706,7 @@ namespace embul_thiyal
             // 
             this.lbl_phoneNumber.AutoSize = true;
             this.lbl_phoneNumber.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_phoneNumber.Location = new System.Drawing.Point(15, 863);
+            this.lbl_phoneNumber.Location = new System.Drawing.Point(15, 880);
             this.lbl_phoneNumber.Name = "lbl_phoneNumber";
             this.lbl_phoneNumber.Size = new System.Drawing.Size(152, 28);
             this.lbl_phoneNumber.TabIndex = 10;
@@ -725,7 +737,7 @@ namespace embul_thiyal
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(502, 661);
+            this.label6.Location = new System.Drawing.Point(502, 683);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(100, 28);
             this.label6.TabIndex = 10;
@@ -746,7 +758,7 @@ namespace embul_thiyal
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(15, 710);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 24);
+            this.label3.Size = new System.Drawing.Size(98, 22);
             this.label3.TabIndex = 10;
             this.label3.Text = "Unit Price";
             // 
@@ -755,7 +767,7 @@ namespace embul_thiyal
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(15, 658);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 24);
+            this.label1.Size = new System.Drawing.Size(101, 22);
             this.label1.TabIndex = 10;
             this.label1.Text = "Item name";
             // 
@@ -771,7 +783,7 @@ namespace embul_thiyal
             this.txt_mobileNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_mobileNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_mobileNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_mobileNumber.Location = new System.Drawing.Point(200, 863);
+            this.txt_mobileNumber.Location = new System.Drawing.Point(200, 880);
             this.txt_mobileNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_mobileNumber.Name = "txt_mobileNumber";
             this.txt_mobileNumber.PasswordChar = '\0';
@@ -791,7 +803,7 @@ namespace embul_thiyal
             this.txt_quantity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_quantity.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_quantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_quantity.Location = new System.Drawing.Point(608, 658);
+            this.txt_quantity.Location = new System.Drawing.Point(608, 680);
             this.txt_quantity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_quantity.Name = "txt_quantity";
             this.txt_quantity.PasswordChar = '\0';
@@ -847,7 +859,7 @@ namespace embul_thiyal
             this.lbl_item1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_item1.Location = new System.Drawing.Point(41, 135);
             this.lbl_item1.Name = "lbl_item1";
-            this.lbl_item1.Size = new System.Drawing.Size(0, 17);
+            this.lbl_item1.Size = new System.Drawing.Size(0, 16);
             this.lbl_item1.TabIndex = 10;
             // 
             // lbl_qty1
@@ -857,7 +869,7 @@ namespace embul_thiyal
             this.lbl_qty1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_qty1.Location = new System.Drawing.Point(256, 135);
             this.lbl_qty1.Name = "lbl_qty1";
-            this.lbl_qty1.Size = new System.Drawing.Size(0, 17);
+            this.lbl_qty1.Size = new System.Drawing.Size(0, 16);
             this.lbl_qty1.TabIndex = 10;
             // 
             // lbl_unitPrice1
@@ -867,7 +879,7 @@ namespace embul_thiyal
             this.lbl_unitPrice1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_unitPrice1.Location = new System.Drawing.Point(145, 135);
             this.lbl_unitPrice1.Name = "lbl_unitPrice1";
-            this.lbl_unitPrice1.Size = new System.Drawing.Size(0, 17);
+            this.lbl_unitPrice1.Size = new System.Drawing.Size(0, 16);
             this.lbl_unitPrice1.TabIndex = 10;
             // 
             // lbl_tot1
@@ -877,7 +889,7 @@ namespace embul_thiyal
             this.lbl_tot1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_tot1.Location = new System.Drawing.Point(351, 135);
             this.lbl_tot1.Name = "lbl_tot1";
-            this.lbl_tot1.Size = new System.Drawing.Size(0, 17);
+            this.lbl_tot1.Size = new System.Drawing.Size(0, 16);
             this.lbl_tot1.TabIndex = 10;
             // 
             // label8
@@ -936,7 +948,7 @@ namespace embul_thiyal
             this.label22.Font = new System.Drawing.Font("Malgun Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(159, 875);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(128, 32);
+            this.label22.Size = new System.Drawing.Size(122, 31);
             this.label22.TabIndex = 13;
             this.label22.Text = "Total : Rs.";
             // 
@@ -1027,7 +1039,7 @@ namespace embul_thiyal
             this.lbl_total.Font = new System.Drawing.Font("Malgun Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_total.Location = new System.Drawing.Point(290, 875);
             this.lbl_total.Name = "lbl_total";
-            this.lbl_total.Size = new System.Drawing.Size(63, 32);
+            this.lbl_total.Size = new System.Drawing.Size(59, 31);
             this.lbl_total.TabIndex = 0;
             this.lbl_total.Text = "0.00";
             // 
@@ -1038,7 +1050,7 @@ namespace embul_thiyal
             this.lbl_tot5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_tot5.Location = new System.Drawing.Point(351, 292);
             this.lbl_tot5.Name = "lbl_tot5";
-            this.lbl_tot5.Size = new System.Drawing.Size(0, 17);
+            this.lbl_tot5.Size = new System.Drawing.Size(0, 16);
             this.lbl_tot5.TabIndex = 10;
             // 
             // lbl_tot4
@@ -1048,7 +1060,7 @@ namespace embul_thiyal
             this.lbl_tot4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_tot4.Location = new System.Drawing.Point(351, 251);
             this.lbl_tot4.Name = "lbl_tot4";
-            this.lbl_tot4.Size = new System.Drawing.Size(0, 17);
+            this.lbl_tot4.Size = new System.Drawing.Size(0, 16);
             this.lbl_tot4.TabIndex = 10;
             // 
             // lbl_tot3
@@ -1058,7 +1070,7 @@ namespace embul_thiyal
             this.lbl_tot3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_tot3.Location = new System.Drawing.Point(351, 212);
             this.lbl_tot3.Name = "lbl_tot3";
-            this.lbl_tot3.Size = new System.Drawing.Size(0, 17);
+            this.lbl_tot3.Size = new System.Drawing.Size(0, 16);
             this.lbl_tot3.TabIndex = 10;
             // 
             // lbl_tot2
@@ -1068,7 +1080,7 @@ namespace embul_thiyal
             this.lbl_tot2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_tot2.Location = new System.Drawing.Point(351, 171);
             this.lbl_tot2.Name = "lbl_tot2";
-            this.lbl_tot2.Size = new System.Drawing.Size(0, 17);
+            this.lbl_tot2.Size = new System.Drawing.Size(0, 16);
             this.lbl_tot2.TabIndex = 10;
             // 
             // lbl_unitPrice5
@@ -1078,7 +1090,7 @@ namespace embul_thiyal
             this.lbl_unitPrice5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_unitPrice5.Location = new System.Drawing.Point(145, 292);
             this.lbl_unitPrice5.Name = "lbl_unitPrice5";
-            this.lbl_unitPrice5.Size = new System.Drawing.Size(0, 17);
+            this.lbl_unitPrice5.Size = new System.Drawing.Size(0, 16);
             this.lbl_unitPrice5.TabIndex = 10;
             // 
             // lbl_unitPrice4
@@ -1088,7 +1100,7 @@ namespace embul_thiyal
             this.lbl_unitPrice4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_unitPrice4.Location = new System.Drawing.Point(145, 251);
             this.lbl_unitPrice4.Name = "lbl_unitPrice4";
-            this.lbl_unitPrice4.Size = new System.Drawing.Size(0, 17);
+            this.lbl_unitPrice4.Size = new System.Drawing.Size(0, 16);
             this.lbl_unitPrice4.TabIndex = 10;
             // 
             // lbl_unitPrice3
@@ -1098,7 +1110,7 @@ namespace embul_thiyal
             this.lbl_unitPrice3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_unitPrice3.Location = new System.Drawing.Point(145, 212);
             this.lbl_unitPrice3.Name = "lbl_unitPrice3";
-            this.lbl_unitPrice3.Size = new System.Drawing.Size(0, 17);
+            this.lbl_unitPrice3.Size = new System.Drawing.Size(0, 16);
             this.lbl_unitPrice3.TabIndex = 10;
             // 
             // lbl_unitPrice2
@@ -1108,7 +1120,7 @@ namespace embul_thiyal
             this.lbl_unitPrice2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_unitPrice2.Location = new System.Drawing.Point(145, 171);
             this.lbl_unitPrice2.Name = "lbl_unitPrice2";
-            this.lbl_unitPrice2.Size = new System.Drawing.Size(0, 17);
+            this.lbl_unitPrice2.Size = new System.Drawing.Size(0, 16);
             this.lbl_unitPrice2.TabIndex = 10;
             // 
             // lbl_qty5
@@ -1118,7 +1130,7 @@ namespace embul_thiyal
             this.lbl_qty5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_qty5.Location = new System.Drawing.Point(256, 292);
             this.lbl_qty5.Name = "lbl_qty5";
-            this.lbl_qty5.Size = new System.Drawing.Size(0, 17);
+            this.lbl_qty5.Size = new System.Drawing.Size(0, 16);
             this.lbl_qty5.TabIndex = 10;
             // 
             // lbl_qty4
@@ -1128,7 +1140,7 @@ namespace embul_thiyal
             this.lbl_qty4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_qty4.Location = new System.Drawing.Point(256, 251);
             this.lbl_qty4.Name = "lbl_qty4";
-            this.lbl_qty4.Size = new System.Drawing.Size(0, 17);
+            this.lbl_qty4.Size = new System.Drawing.Size(0, 16);
             this.lbl_qty4.TabIndex = 10;
             // 
             // lbl_qty3
@@ -1138,7 +1150,7 @@ namespace embul_thiyal
             this.lbl_qty3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_qty3.Location = new System.Drawing.Point(256, 212);
             this.lbl_qty3.Name = "lbl_qty3";
-            this.lbl_qty3.Size = new System.Drawing.Size(0, 17);
+            this.lbl_qty3.Size = new System.Drawing.Size(0, 16);
             this.lbl_qty3.TabIndex = 10;
             // 
             // lbl_qty2
@@ -1148,7 +1160,7 @@ namespace embul_thiyal
             this.lbl_qty2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_qty2.Location = new System.Drawing.Point(256, 171);
             this.lbl_qty2.Name = "lbl_qty2";
-            this.lbl_qty2.Size = new System.Drawing.Size(0, 17);
+            this.lbl_qty2.Size = new System.Drawing.Size(0, 16);
             this.lbl_qty2.TabIndex = 10;
             // 
             // lbl_item5
@@ -1158,7 +1170,7 @@ namespace embul_thiyal
             this.lbl_item5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_item5.Location = new System.Drawing.Point(41, 292);
             this.lbl_item5.Name = "lbl_item5";
-            this.lbl_item5.Size = new System.Drawing.Size(0, 17);
+            this.lbl_item5.Size = new System.Drawing.Size(0, 16);
             this.lbl_item5.TabIndex = 10;
             // 
             // lbl_item4
@@ -1168,7 +1180,7 @@ namespace embul_thiyal
             this.lbl_item4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_item4.Location = new System.Drawing.Point(41, 251);
             this.lbl_item4.Name = "lbl_item4";
-            this.lbl_item4.Size = new System.Drawing.Size(0, 17);
+            this.lbl_item4.Size = new System.Drawing.Size(0, 16);
             this.lbl_item4.TabIndex = 10;
             // 
             // lbl_item3
@@ -1178,7 +1190,7 @@ namespace embul_thiyal
             this.lbl_item3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_item3.Location = new System.Drawing.Point(41, 212);
             this.lbl_item3.Name = "lbl_item3";
-            this.lbl_item3.Size = new System.Drawing.Size(0, 17);
+            this.lbl_item3.Size = new System.Drawing.Size(0, 16);
             this.lbl_item3.TabIndex = 10;
             // 
             // lbl_item2
@@ -1188,7 +1200,7 @@ namespace embul_thiyal
             this.lbl_item2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_item2.Location = new System.Drawing.Point(41, 171);
             this.lbl_item2.Name = "lbl_item2";
-            this.lbl_item2.Size = new System.Drawing.Size(0, 17);
+            this.lbl_item2.Size = new System.Drawing.Size(0, 16);
             this.lbl_item2.TabIndex = 10;
             // 
             // printPreviewDialog1
@@ -1205,16 +1217,6 @@ namespace embul_thiyal
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Malgun Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(1039, 23);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(208, 38);
-            this.label23.TabIndex = 44;
-            this.label23.Text = "Item Category";
             // 
             // frm_sale
             // 

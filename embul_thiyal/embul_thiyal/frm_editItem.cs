@@ -21,7 +21,7 @@ namespace embul_thiyal
         private void btn_search_Click(object sender, EventArgs e)
         {
             cls_connection.open_connection();
-            MySqlCommand cmd1 = new MySqlCommand("SELECT `item_id`,`item_name`,`item_price`,`quantity`,`category` FROM `item` WHERE item_id =@id", cls_connection.con);
+            MySqlCommand cmd1 = new MySqlCommand("SELECT `item_id`,`item_name`,`item_price`,`category` FROM `item` WHERE item_name =@id", cls_connection.con);
             cmd1.Parameters.AddWithValue("id", txt_searchName.Text);
 
             MySqlDataReader reader1;
