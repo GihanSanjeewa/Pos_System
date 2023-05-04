@@ -38,8 +38,9 @@ namespace embul_thiyal
             this.txt_unitPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_itemName = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_save = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_editItem = new Guna.UI2.WinForms.Guna2Button();
             this.dgv_item = new System.Windows.Forms.DataGridView();
+            this.btn_editItem = new Guna.UI2.WinForms.Guna2Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_item)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +57,7 @@ namespace embul_thiyal
             this.groupBox1.Controls.Add(this.txt_itemName);
             this.groupBox1.Controls.Add(this.btn_save);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 204);
+            this.groupBox1.Location = new System.Drawing.Point(12, 25);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(527, 482);
             this.groupBox1.TabIndex = 6;
@@ -187,37 +188,53 @@ namespace embul_thiyal
             this.btn_save.Text = "Save";
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
-            // btn_editItem
-            // 
-            this.btn_editItem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_editItem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_editItem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_editItem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_editItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_editItem.ForeColor = System.Drawing.Color.White;
-            this.btn_editItem.Location = new System.Drawing.Point(12, 9);
-            this.btn_editItem.Name = "btn_editItem";
-            this.btn_editItem.Size = new System.Drawing.Size(174, 78);
-            this.btn_editItem.TabIndex = 8;
-            this.btn_editItem.Text = "Edit item";
-            this.btn_editItem.Click += new System.EventHandler(this.btn_editItem_Click);
-            // 
             // dgv_item
             // 
             this.dgv_item.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgv_item.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_item.Location = new System.Drawing.Point(614, 204);
+            this.dgv_item.Location = new System.Drawing.Point(614, 25);
             this.dgv_item.Name = "dgv_item";
             this.dgv_item.RowHeadersWidth = 51;
             this.dgv_item.RowTemplate.Height = 24;
             this.dgv_item.Size = new System.Drawing.Size(602, 482);
             this.dgv_item.TabIndex = 9;
             // 
+            // btn_editItem
+            // 
+            this.btn_editItem.BackgroundImage = global::embul_thiyal.Properties.Resources.drag;
+            this.btn_editItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_editItem.BorderRadius = 8;
+            this.btn_editItem.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            this.btn_editItem.BorderThickness = 3;
+            this.btn_editItem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_editItem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_editItem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_editItem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_editItem.FillColor = System.Drawing.Color.Transparent;
+            this.btn_editItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_editItem.ForeColor = System.Drawing.Color.White;
+            this.btn_editItem.Location = new System.Drawing.Point(15, 530);
+            this.btn_editItem.Name = "btn_editItem";
+            this.btn_editItem.Size = new System.Drawing.Size(140, 140);
+            this.btn_editItem.TabIndex = 8;
+            this.btn_editItem.Click += new System.EventHandler(this.btn_editItem_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(30, 681);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(108, 28);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Edit Items";
+            // 
             // frm_item
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1800, 897);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.dgv_item);
             this.Controls.Add(this.btn_editItem);
             this.Controls.Add(this.groupBox1);
@@ -230,6 +247,7 @@ namespace embul_thiyal
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_item)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -245,5 +263,6 @@ namespace embul_thiyal
         private Guna.UI2.WinForms.Guna2TextBox txt_unitPrice;
         private Guna.UI2.WinForms.Guna2Button btn_editItem;
         private System.Windows.Forms.DataGridView dgv_item;
+        private System.Windows.Forms.Label label7;
     }
 }
