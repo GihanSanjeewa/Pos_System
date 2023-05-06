@@ -74,5 +74,24 @@ namespace embul_thiyal
             this.Hide();
             login.Show();   
         }
+
+        private void btn_purchasing_Click(object sender, EventArgs e)
+        {
+            frm_purchasing purchasing = new frm_purchasing();
+            this.Hide();
+            purchasing.Show();
+        }
+
+        private void btn_stock_Click(object sender, EventArgs e)
+        {
+            frm_stock stock = new frm_stock();
+            this.Hide();
+            stock.Show();
+        }
+
+        private void frm_home_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

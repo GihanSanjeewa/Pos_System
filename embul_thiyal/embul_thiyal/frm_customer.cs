@@ -74,5 +74,10 @@ namespace embul_thiyal
         {
             fndataLoad();
         }
+
+        private void frm_customer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

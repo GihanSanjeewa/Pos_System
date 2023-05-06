@@ -49,5 +49,10 @@ namespace embul_thiyal
             }
             lbl_tot.Text = sum.ToString();
         }
+
+        private void frm_dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

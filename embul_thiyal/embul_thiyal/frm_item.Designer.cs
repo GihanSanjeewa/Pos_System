@@ -59,7 +59,8 @@ namespace embul_thiyal
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 25);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(527, 482);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(395, 392);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Item details";
@@ -90,16 +91,17 @@ namespace embul_thiyal
             "Devilled"});
             this.cmb_category.Location = new System.Drawing.Point(155, 198);
             this.cmb_category.Name = "cmb_category";
-            this.cmb_category.Size = new System.Drawing.Size(326, 36);
+            this.cmb_category.Size = new System.Drawing.Size(246, 36);
             this.cmb_category.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(44, 198);
+            this.label2.Location = new System.Drawing.Point(33, 161);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 24);
+            this.label2.Size = new System.Drawing.Size(70, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Category";
             // 
@@ -107,9 +109,10 @@ namespace embul_thiyal
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(44, 275);
+            this.label4.Location = new System.Drawing.Point(33, 223);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 24);
+            this.label4.Size = new System.Drawing.Size(76, 19);
             this.label4.TabIndex = 2;
             this.label4.Text = "Unit price";
             // 
@@ -117,9 +120,10 @@ namespace embul_thiyal
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(187, 275);
+            this.label3.Location = new System.Drawing.Point(140, 223);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 24);
+            this.label3.Size = new System.Drawing.Size(28, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Rs.";
             // 
@@ -127,9 +131,10 @@ namespace embul_thiyal
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(44, 144);
+            this.label1.Location = new System.Drawing.Point(33, 117);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 24);
+            this.label1.Size = new System.Drawing.Size(82, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "Item name";
             // 
@@ -144,13 +149,13 @@ namespace embul_thiyal
             this.txt_unitPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_unitPrice.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_unitPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_unitPrice.Location = new System.Drawing.Point(228, 263);
-            this.txt_unitPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_unitPrice.Location = new System.Drawing.Point(171, 214);
+            this.txt_unitPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_unitPrice.Name = "txt_unitPrice";
             this.txt_unitPrice.PasswordChar = '\0';
             this.txt_unitPrice.PlaceholderText = "";
             this.txt_unitPrice.SelectedText = "";
-            this.txt_unitPrice.Size = new System.Drawing.Size(253, 36);
+            this.txt_unitPrice.Size = new System.Drawing.Size(190, 29);
             this.txt_unitPrice.TabIndex = 1;
             // 
             // txt_itemName
@@ -164,13 +169,13 @@ namespace embul_thiyal
             this.txt_itemName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_itemName.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_itemName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_itemName.Location = new System.Drawing.Point(155, 144);
-            this.txt_itemName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_itemName.Location = new System.Drawing.Point(116, 117);
+            this.txt_itemName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_itemName.Name = "txt_itemName";
             this.txt_itemName.PasswordChar = '\0';
             this.txt_itemName.PlaceholderText = "";
             this.txt_itemName.SelectedText = "";
-            this.txt_itemName.Size = new System.Drawing.Size(326, 35);
+            this.txt_itemName.Size = new System.Drawing.Size(244, 28);
             this.txt_itemName.TabIndex = 1;
             // 
             // btn_save
@@ -181,9 +186,10 @@ namespace embul_thiyal
             this.btn_save.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_save.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_save.ForeColor = System.Drawing.Color.Black;
-            this.btn_save.Location = new System.Drawing.Point(182, 355);
+            this.btn_save.Location = new System.Drawing.Point(136, 288);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(2);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(180, 45);
+            this.btn_save.Size = new System.Drawing.Size(135, 37);
             this.btn_save.TabIndex = 0;
             this.btn_save.Text = "Save";
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
@@ -196,7 +202,7 @@ namespace embul_thiyal
             this.dgv_item.Name = "dgv_item";
             this.dgv_item.RowHeadersWidth = 51;
             this.dgv_item.RowTemplate.Height = 24;
-            this.dgv_item.Size = new System.Drawing.Size(602, 482);
+            this.dgv_item.Size = new System.Drawing.Size(452, 392);
             this.dgv_item.TabIndex = 9;
             // 
             // btn_editItem
@@ -225,13 +231,13 @@ namespace embul_thiyal
             this.label7.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(30, 681);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 28);
+            this.label7.Size = new System.Drawing.Size(87, 21);
             this.label7.TabIndex = 20;
             this.label7.Text = "Edit Items";
             // 
             // frm_item
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1800, 897);
             this.Controls.Add(this.label7);
@@ -239,10 +245,10 @@ namespace embul_thiyal
             this.Controls.Add(this.btn_editItem);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_item";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Items";
+            this.Load += new System.EventHandler(this.frm_item_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_item)).EndInit();

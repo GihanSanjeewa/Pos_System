@@ -48,10 +48,9 @@ namespace embul_thiyal
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1721, 91);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(1291, 74);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 24);
+            this.label5.Size = new System.Drawing.Size(49, 19);
             this.label5.TabIndex = 7;
             this.label5.Text = "Home";
             // 
@@ -62,9 +61,11 @@ namespace embul_thiyal
             this.groupBox1.Controls.Add(this.btn_search_customer);
             this.groupBox1.Controls.Add(this.txt_mobile_number);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 149);
+            this.groupBox1.Location = new System.Drawing.Point(9, 121);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(524, 282);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(393, 229);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Manage Customer";
@@ -75,9 +76,10 @@ namespace embul_thiyal
             this.lbl_phoneNumber.AutoSize = true;
             this.lbl_phoneNumber.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_phoneNumber.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_phoneNumber.Location = new System.Drawing.Point(24, 113);
+            this.lbl_phoneNumber.Location = new System.Drawing.Point(18, 92);
+            this.lbl_phoneNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_phoneNumber.Name = "lbl_phoneNumber";
-            this.lbl_phoneNumber.Size = new System.Drawing.Size(171, 28);
+            this.lbl_phoneNumber.Size = new System.Drawing.Size(141, 21);
             this.lbl_phoneNumber.TabIndex = 11;
             this.lbl_phoneNumber.Text = "Phone number : ";
             // 
@@ -89,9 +91,10 @@ namespace embul_thiyal
             this.btn_search_customer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_search_customer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_search_customer.ForeColor = System.Drawing.Color.White;
-            this.btn_search_customer.Location = new System.Drawing.Point(323, 177);
+            this.btn_search_customer.Location = new System.Drawing.Point(242, 144);
+            this.btn_search_customer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_search_customer.Name = "btn_search_customer";
-            this.btn_search_customer.Size = new System.Drawing.Size(180, 45);
+            this.btn_search_customer.Size = new System.Drawing.Size(135, 37);
             this.btn_search_customer.TabIndex = 2;
             this.btn_search_customer.Text = "Delete";
             this.btn_search_customer.Click += new System.EventHandler(this.btn_search_customer_Click);
@@ -107,13 +110,13 @@ namespace embul_thiyal
             this.txt_mobile_number.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_mobile_number.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_mobile_number.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_mobile_number.Location = new System.Drawing.Point(224, 111);
-            this.txt_mobile_number.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_mobile_number.Location = new System.Drawing.Point(168, 90);
+            this.txt_mobile_number.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_mobile_number.Name = "txt_mobile_number";
             this.txt_mobile_number.PasswordChar = '\0';
             this.txt_mobile_number.PlaceholderText = "";
             this.txt_mobile_number.SelectedText = "";
-            this.txt_mobile_number.Size = new System.Drawing.Size(279, 36);
+            this.txt_mobile_number.Size = new System.Drawing.Size(209, 29);
             this.txt_mobile_number.TabIndex = 0;
             this.txt_mobile_number.TextChanged += new System.EventHandler(this.txt_mobile_number_TextChanged);
             // 
@@ -141,12 +144,13 @@ namespace embul_thiyal
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_customer.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_customer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_customer.Location = new System.Drawing.Point(708, 91);
+            this.dgv_customer.Location = new System.Drawing.Point(531, 74);
+            this.dgv_customer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_customer.Name = "dgv_customer";
             this.dgv_customer.RowHeadersVisible = false;
             this.dgv_customer.RowHeadersWidth = 51;
             this.dgv_customer.RowTemplate.Height = 24;
-            this.dgv_customer.Size = new System.Drawing.Size(797, 529);
+            this.dgv_customer.Size = new System.Drawing.Size(598, 430);
             this.dgv_customer.TabIndex = 10;
             this.dgv_customer.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_customer.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -181,25 +185,26 @@ namespace embul_thiyal
             this.non.FillColor = System.Drawing.Color.Transparent;
             this.non.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.non.ForeColor = System.Drawing.Color.White;
-            this.non.Location = new System.Drawing.Point(41, 12);
+            this.non.Location = new System.Drawing.Point(31, 10);
+            this.non.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.non.Name = "non";
-            this.non.Size = new System.Drawing.Size(140, 140);
+            this.non.Size = new System.Drawing.Size(105, 114);
             this.non.TabIndex = 19;
             // 
             // frm_customer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1800, 897);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.non);
             this.Controls.Add(this.dgv_customer);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_customer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer";
+            this.Load += new System.EventHandler(this.frm_customer_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_customer)).EndInit();

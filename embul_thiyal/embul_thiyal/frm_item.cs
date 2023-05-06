@@ -50,8 +50,25 @@ namespace embul_thiyal
             dgv_item.DataSource = ds.Tables["item"].DefaultView;
 
         }
+        public void addtoStock()
+        {
+            cls_connection.open_connection();
+            
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO `stock`(`item_name`, `quantity`, `unit_price`) VALUES( @item_name,@quantity ,@unit_price'))", cls_connection.con);
+            cmd.Parameters.Clear();
 
-        
+            cmd.Parameters.AddWithValue("@item_name", txt_itemName.Text);
+            cmd.Parameters.AddWithValue("@quantity",0);
+            cmd.Parameters.AddWithValue("@unit_price", txt_unitPrice.Text);
+
+            cmd.ExecuteNonQuery();
+            cls_connection.close_connection();
+
+            MessageBox.Show("Item Added Successfully!");
+            fndataLoad();
+
+        }
+
         private void btn_search_Click(object sender, EventArgs e)
         {
             //    cls_connection.open_connection();
@@ -85,6 +102,11 @@ namespace embul_thiyal
             frm_editItem editItem = new frm_editItem();
             this.Hide();
             editItem.Show();
+
+        }
+
+        private void frm_item_Load(object sender, EventArgs e)
+        {
 
         }
     }
