@@ -166,3 +166,5 @@ C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul
 C:\Users\Udara Ekanayake\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.csproj.Fody.CopyLocal.cache
 C:\Users\wONd3r\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.frm_purchasing.resources
 C:\Users\wONd3r\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.frm_stock.resources
+C:\Users\gihan\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.frm_purchasing.resources
+C:\Users\gihan\OneDrive\Documents\GitHub\Pos_System\embul_thiyal\embul_thiyal\obj\Debug\embul_thiyal.frm_stock.resources
